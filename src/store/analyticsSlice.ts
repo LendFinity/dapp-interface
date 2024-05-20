@@ -61,7 +61,8 @@ export const createAnalyticsSlice: StateCreator<
     mixpanelInitialized: false,
 
     initializeMixpanel: () => {
-      const userAcceptedAnalytics = localStorage.getItem('userAcceptedAnalytics') === 'true';
+      const userAcceptedAnalytics = false;
+      // const userAcceptedAnalytics = localStorage.getItem('userAcceptedAnalytics') === 'true';
       const isInitialized = get().mixpanelInitialized;
 
       if (!MIXPANEL_TOKEN) return;

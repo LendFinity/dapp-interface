@@ -27,8 +27,8 @@ export default function AnalyticsBanner() {
   const { breakpoints } = useTheme();
   const isMobile = useMediaQuery(breakpoints.down('sm'));
 
-  const hasUserMadeChoice =
-    typeof window !== 'undefined' && localStorage.getItem('userAcceptedAnalytics') !== null;
+  const hasUserMadeChoice = true;
+  // const hasUserMadeChoice = typeof window !== 'undefined' && localStorage.getItem('userAcceptedAnalytics') !== null;
 
   // Note: If they have already chosen don't show again unless configured from footer
   if (hasUserMadeChoice) return null;
