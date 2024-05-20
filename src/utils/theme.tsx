@@ -38,7 +38,6 @@ declare module '@mui/material/styles/createPalette' {
   interface Palette {
     gradients: {
       aaveGradient: string;
-      newGradient: string;
     };
     other: {
       standardInputLine: string;
@@ -48,7 +47,6 @@ declare module '@mui/material/styles/createPalette' {
   interface PaletteOptions {
     gradients: {
       aaveGradient: string;
-      newGradient: string;
     };
   }
 }
@@ -136,15 +134,15 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
     palette: {
       mode,
       primary: {
-        main: getColor('#383D51', '#EAEBEF'),
-        light: getColor('#62677B', '#F1F1F3'),
-        dark: getColor('#292E41', '#D2D4DC'),
-        contrast: getColor('#FFFFFF', '#0F121D'),
+        main: getColor('#383D51', '#EAEBEF'), //blueish gray/white (buttons)
+        light: getColor('#62677B', '#F1F1F3'), //light gray/white (on/off buttons)
+        dark: getColor('#292E41', '#D2D4DC'), //darker gray/whiteish gray (not used)
+        contrast: getColor('#FFFFFF', '#0F121D'), //white/dark blue (not used)
       },
       secondary: {
-        main: getColor('#FF607B', '#F48FB1'),
-        light: getColor('#FF607B', '#F6A5C0'),
-        dark: getColor('#B34356', '#AA647B'),
+        main: getColor('#FF607B', '#F48FB1'), //salmon/pink (switch tokens)
+        light: getColor('#FF607B', '#F6A5C0'), //light salmon/pink (not used)
+        dark: getColor('#B34356', '#AA647B'), //dark salmon/pink (not used)
       },
       error: {
         main: getColor('#BC0000B8', '#F44336'),
@@ -182,11 +180,11 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
         highlight: getColor('#383D51', '#C9B3F9'),
       },
       background: {
-        default: getColor('#F1F1F3', '#1B2030'),
-        paper: getColor('#FFFFFF', '#292E41'),
-        surface: getColor('#F7F7F9', '#383D51'),
-        surface2: getColor('#F9F9FB', '#383D51'),
-        header: getColor('#2B2D3C', '#1B2030'),
+        default: getColor('#F1F1F3', '#222222'), // white/dark blue
+        paper: getColor('#FFFFFF', '#292E41'), // white/dark blue
+        surface: getColor('#F7F7F9', '#383D51'), // white/dark blueish gray
+        surface2: getColor('#F9F9FB', '#383D51'), // white/dark blueish gray
+        header: getColor('#222222', '#222222'),
         disabled: getColor('#EAEBEF', '#EBEBEF14'),
       },
       divider: getColor('#EAEBEF', '#EBEBEF14'),
@@ -202,8 +200,7 @@ export const getDesignTokens = (mode: 'light' | 'dark') => {
         standardInputLine: getColor('#383D511F', '#EBEBEF6B'),
       },
       gradients: {
-        aaveGradient: 'linear-gradient(248.86deg, #B6509E 10.51%, #2EBAC6 93.41%)',
-        newGradient: 'linear-gradient(79.67deg, #8C3EBC 0%, #007782 95.82%)',
+        aaveGradient: 'linear-gradient(90deg, #EAC0FB 0%, #5F47F8)',
       },
     },
     spacing: 4,
