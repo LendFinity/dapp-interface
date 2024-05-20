@@ -1,11 +1,9 @@
 import { Trans } from '@lingui/macro';
 import { GitHub, Twitter } from '@mui/icons-material';
 import { Box, styled, SvgIcon, Typography } from '@mui/material';
+import DiscordIcon from 'public/icons/discord.svg';
+import MediumIcon from 'public/icons/medium.svg';
 import { Link } from 'src/components/primitives/Link';
-import { useRootStore } from 'src/store/root';
-
-import DiscordIcon from '/public/icons/discord.svg';
-import LensLogoIcon from '/public/icons/lens-logo.svg';
 
 interface StyledLinkProps {
   onClick?: React.MouseEventHandler<HTMLAnchorElement>;
@@ -21,73 +19,78 @@ const StyledLink = styled(Link)<StyledLinkProps>(({ theme }) => ({
 }));
 
 const FOOTER_ICONS = [
+  // {
+  //   href: 'https://hey.xyz/u/aave',
+  //   icon: <LensLogoIcon />,
+  //   title: 'Bitfinity',
+  // },
   {
-    href: 'https://hey.xyz/u/aave',
-    icon: <LensLogoIcon />,
-    title: 'Aave',
+    href: 'https://medium.com/@lendfinity.xyz',
+    icon: <MediumIcon />,
+    title: 'Medium',
   },
   {
-    href: 'https://twitter.com/aave',
+    href: 'https://x.com/lendfinity_xyz',
     icon: <Twitter />,
-    title: 'Lens',
+    title: 'X',
   },
   {
-    href: 'https://discord.com/invite/aave',
+    href: 'https://discord.gg/2yKFhWyShB',
     icon: <DiscordIcon />,
     title: 'Discord',
   },
   {
-    href: 'https://github.com/aave',
+    href: 'https://github.com/LendFinity',
     icon: <GitHub />,
     title: 'Github',
   },
 ];
 
 export function AppFooter() {
-  const [setAnalyticsConfigOpen, setFeedbackOpen] = useRootStore((store) => [
-    store.setAnalyticsConfigOpen,
-    store.setFeedbackOpen,
-  ]);
+  // const [setAnalyticsConfigOpen, setFeedbackOpen] = useRootStore((store) => [
+  //   store.setAnalyticsConfigOpen,
+  //   store.setFeedbackOpen,
+  // ]);
 
   const FOOTER_LINKS = [
+    //   {
+    //     href: 'https://aave.com/term-of-use/',
+    //     label: <Trans>Terms</Trans>,
+    //     key: 'Terms',
+    //   },
+    //   {
+    //     href: 'https://aave.com/privacy-policy/',
+    //     label: <Trans>Privacy</Trans>,
+    //     key: 'Privacy',
+    //   },
     {
-      href: 'https://aave.com/term-of-use/',
-      label: <Trans>Terms</Trans>,
-      key: 'Terms',
-    },
-    {
-      href: 'https://aave.com/privacy-policy/',
-      label: <Trans>Privacy</Trans>,
-      key: 'Privacy',
-    },
-    {
-      href: 'https://docs.aave.com/hub/',
+      href: 'https://docs.lendfinity.xyz',
       label: <Trans>Docs</Trans>,
       key: 'Docs',
     },
-    {
-      href: 'https://docs.aave.com/faq/',
-      label: <Trans>FAQS</Trans>,
-      key: 'FAQS',
-    },
-    {
-      href: 'https://discord.com/invite/aave',
-      label: <Trans>Send feedback</Trans>,
-      key: 'Send feedback',
-      onClick: (event: React.MouseEvent) => {
-        event.preventDefault();
-        setFeedbackOpen(true);
-      },
-    },
-    {
-      href: '/',
-      label: <Trans>Manage analytics</Trans>,
-      key: 'Manage analytics',
-      onClick: (event: React.MouseEvent) => {
-        event.preventDefault();
-        setAnalyticsConfigOpen(true);
-      },
-    },
+    //   {
+    //     href: 'https://docs.aave.com/faq/',
+    //     label: <Trans>FAQS</Trans>,
+    //     key: 'FAQS',
+    //   },
+    //   {
+    //     href: 'https://discord.com/invite/aave',
+    //     label: <Trans>Send feedback</Trans>,
+    //     key: 'Send feedback',
+    //     onClick: (event: React.MouseEvent) => {
+    //       event.preventDefault();
+    //       setFeedbackOpen(true);
+    //     },
+    //   },
+    //   {
+    //     href: '',
+    //     label: <Trans>Manage analytics</Trans>,
+    //     key: 'Manage analytics',
+    //     onClick: (event: React.MouseEvent) => {
+    //       event.preventDefault();
+    //       setAnalyticsConfigOpen(true);
+    //     },
+    //   },
   ];
 
   return (

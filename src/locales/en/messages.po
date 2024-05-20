@@ -925,6 +925,7 @@ msgid "Discountable amount"
 msgstr "Discountable amount"
 
 #: src/layouts/AppFooter.tsx
+#: src/ui-config/menu-items/index.tsx
 msgid "Docs"
 msgstr "Docs"
 
@@ -1065,10 +1066,6 @@ msgstr "Export data to"
 msgid "FAQ"
 msgstr "FAQ"
 
-#: src/layouts/AppFooter.tsx
-msgid "FAQS"
-msgstr "FAQS"
-
 #: src/modules/governance/proposal/VotersListContainer.tsx
 msgid "Failed to load proposal voters. Please refresh the page."
 msgstr "Failed to load proposal voters. Please refresh the page."
@@ -1169,10 +1166,6 @@ msgstr "Go to Balancer Pool"
 #: src/components/transactions/MigrateV3/MigrateV3ModalContent.tsx
 msgid "Go to V3 Dashboard"
 msgstr "Go to V3 Dashboard"
-
-#: src/ui-config/menu-items/index.tsx
-msgid "Governance"
-msgstr "Governance"
 
 #: src/layouts/components/LanguageSwitcher.tsx
 msgid "Greek"
@@ -1415,10 +1408,6 @@ msgstr "MAI has been paused due to a community decision. Supply, borrows and rep
 #: src/modules/dashboard/LiquidationRiskParametresModal/components/LTVContent.tsx
 msgid "MAX"
 msgstr "MAX"
-
-#: src/layouts/AppFooter.tsx
-msgid "Manage analytics"
-msgstr "Manage analytics"
 
 #: src/modules/reserve-overview/ReserveTopDetailsWrapper.tsx
 msgid "Market"
@@ -1808,10 +1797,6 @@ msgstr "Price impact is the spread between the total value of the entry tokens s
 msgid "Price impact {0}%"
 msgstr "Price impact {0}%"
 
-#: src/layouts/AppFooter.tsx
-msgid "Privacy"
-msgstr "Privacy"
-
 #: src/modules/governance/proposal/ProposalLifecycle.tsx
 msgid "Proposal details"
 msgstr "Proposal details"
@@ -2092,10 +2077,6 @@ msgstr "Selected supply assets"
 msgid "Send Feedback"
 msgstr "Send Feedback"
 
-#: src/layouts/AppFooter.tsx
-msgid "Send feedback"
-msgstr "Send feedback"
-
 #: src/modules/governance/DelegatedInfoPanel.tsx
 msgid "Set up delegation"
 msgstr "Set up delegation"
@@ -2209,7 +2190,6 @@ msgstr "Stablecoin"
 #: src/components/transactions/Stake/StakeActions.tsx
 #: src/modules/staking/StakingPanel.tsx
 #: src/modules/staking/StakingPanel.tsx
-#: src/ui-config/menu-items/index.tsx
 msgid "Stake"
 msgstr "Stake"
 
@@ -2414,10 +2394,6 @@ msgstr "Switching rate"
 #: src/modules/reserve-overview/Gho/GhoReserveConfiguration.tsx
 msgid "Techpaper"
 msgstr "Techpaper"
-
-#: src/layouts/AppFooter.tsx
-msgid "Terms"
-msgstr "Terms"
 
 #: src/modules/faucet/FaucetAssetsList.tsx
 msgid "Test Assets"
