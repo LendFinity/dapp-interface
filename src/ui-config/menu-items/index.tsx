@@ -1,4 +1,8 @@
-import { BookOpenIcon, CreditCardIcon, QuestionMarkCircleIcon } from '@heroicons/react/outline';
+import {
+  BookOpenIcon,
+  CreditCardIcon,
+  // QuestionMarkCircleIcon
+} from '@heroicons/react/outline';
 import { t } from '@lingui/macro';
 import { ReactNode } from 'react';
 import { ROUTES } from 'src/components/primitives/Link';
@@ -47,10 +51,6 @@ export const navigation: Navigation[] = [
     title: t`Faucet`,
     isVisible: () => process.env.NEXT_PUBLIC_ENV === 'staging' || ENABLE_TESTNET,
   },
-  {
-    link: 'https://docs.lendfinity.xyz/',
-    title: t`Docs`,
-  },
 ];
 
 interface MoreMenuItem extends Navigation {
@@ -59,14 +59,14 @@ interface MoreMenuItem extends Navigation {
 }
 
 const moreMenuItems: MoreMenuItem[] = [
+  // {
+  //   link: 'https://docs.aave.com/faq/',
+  //   title: t`FAQ`,
+  //   icon: <QuestionMarkCircleIcon />,
+  // },
   {
-    link: 'https://docs.aave.com/faq/',
-    title: t`FAQ`,
-    icon: <QuestionMarkCircleIcon />,
-  },
-  {
-    link: 'https://docs.aave.com/portal/',
-    title: t`Developers`,
+    link: 'https://docs.lendfinity.com/',
+    title: t`Documentation`,
     icon: <BookOpenIcon />,
   },
 ];
