@@ -216,7 +216,7 @@ export function AppHeader() {
           }}
           onClick={() => setMobileMenuOpen(false)}
         >
-          <img src={uiConfig.appLogo} alt="Lendfinity" width={120} height={20} />
+          <img src={uiConfig.appLogo} alt="Lendfinity" width={sm ? 80 : 120} height={20} />
         </Box>
         <Box sx={{ mr: sm ? 1 : 3 }}>
           {ENABLE_TESTNET && (
