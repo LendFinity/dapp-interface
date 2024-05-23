@@ -12,9 +12,9 @@ export function MainLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <TopBarNotify
-        notifyText="Users can now stake GHO in the safety module 🎉"
-        learnMoreLink="https://app.aave.com/staking"
-        buttonText="Learn More"
+        notifyText="Follow LendFinity on X!"
+        learnMoreLink="https://x.com/lendfinity_xyz"
+        buttonText="Follow"
       />
       <AppHeader />
       <Box component="main" sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>

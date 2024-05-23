@@ -54,6 +54,16 @@ export type BaseNetworkConfig = Omit<NetworkConfig, 'explorerLinkBuilder'>;
 const ratesHistoryApiUrl = `${process.env.NEXT_PUBLIC_API_BASEURL}/data/rates-history`;
 
 export const networkConfigs: Record<string, BaseNetworkConfig> = {
+  355113: {
+    name: 'Bitfinity Testnet',
+    publicJsonRPCUrl: ['https://testnet.bitfinity.network'],
+    baseAssetSymbol: 'BFT',
+    wrappedBaseAssetSymbol: 'WBFT',
+    baseAssetDecimals: 18,
+    explorerLink: 'https://explorer.testnet.bitfinity.network/',
+    isTestnet: true,
+    networkLogoPath: '/icons/networks/bitfinity.svg',
+  },
   [ChainId.sepolia]: {
     name: 'Ethereum Sepolia',
     privateJsonRPCUrl: 'https://eth-sepolia.g.alchemy.com/v2/VAfNJrTN-TopQjFDwcdLeeDOLDiFQcBP',

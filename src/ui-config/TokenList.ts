@@ -85,6 +85,17 @@ const NETWORK_ASSETS: TokenInfo[] = [
       isNative: true,
     },
   },
+  {
+    name: 'Bitfinity',
+    symbol: 'BFT',
+    decimals: 18,
+    address: API_ETH_MOCK_ADDRESS,
+    chainId: 355113,
+    logoURI: 'https://rsusi-aqaaa-aaaag-abhda-cai.ic0.app/images/coins/BFT.png',
+    extensions: {
+      isNative: true,
+    },
+  },
 
   // NOTE L2 ETH
   {
@@ -12696,6 +12707,79 @@ export const TOKEN_LIST: TokenList = {
       decimals: 18,
       chainId: 1,
       logoURI: 'https://assets.coingecko.com/coins/images/30663/standard/ghoaave.jpeg?1696529533',
+    },
+    // Bitfinity Tokens
+    {
+      chainId: 355113,
+      address: '0x9581aa53E089F4E8f0B3c566f00121DF7c83c83B',
+      name: 'ChapSwap',
+      symbol: 'CHAP',
+      decimals: 18,
+      logoURI:
+        'https://rsusi-aqaaa-aaaag-abhda-cai.ic0.app/images/coins/0x9581aa53E089F4E8f0B3c566f00121DF7c83c83B.png',
+    },
+    {
+      chainId: 355113,
+      address: '0xaFD885e805B78C13DF22118695ef3F4dc582656D',
+      name: 'Calpha',
+      symbol: 'CAL',
+      decimals: 18,
+      logoURI:
+        'https://rsusi-aqaaa-aaaag-abhda-cai.ic0.app/images/coins/0xaFD885e805B78C13DF22118695ef3F4dc582656D.png',
+    },
+    {
+      chainId: 355113,
+      address: '0xc489778CD7DB9427a730F30BD66a57762DE96628',
+      name: 'Coderer',
+      symbol: 'COD',
+      decimals: 18,
+      logoURI:
+        'https://rsusi-aqaaa-aaaag-abhda-cai.ic0.app/images/coins/0xc489778CD7DB9427a730F30BD66a57762DE96628.png',
+    },
+    {
+      chainId: 355113,
+      address: '0x42AbC7B10224E2e7Ea721FC5e002BAe561BA6659',
+      name: 'Cavara',
+      symbol: 'CVA',
+      decimals: 18,
+      logoURI:
+        'https://rsusi-aqaaa-aaaag-abhda-cai.ic0.app/images/coins/0x42AbC7B10224E2e7Ea721FC5e002BAe561BA6659.png',
+    },
+    {
+      chainId: 355113,
+      address: '0x1bBB2533Dcd95D7E347bC278c5b6398b5f7c83EC',
+      name: 'Cyanara',
+      symbol: 'CYN',
+      decimals: 18,
+      logoURI:
+        'https://rsusi-aqaaa-aaaag-abhda-cai.ic0.app/images/coins/0x1bBB2533Dcd95D7E347bC278c5b6398b5f7c83EC.png',
+    },
+    {
+      chainId: 355113,
+      address: '0xa9449C8E42D5D49a2B5031A843747B342816dC13',
+      name: 'Internat',
+      symbol: 'INT',
+      decimals: 18,
+      logoURI:
+        'https://rsusi-aqaaa-aaaag-abhda-cai.ic0.app/images/coins/0xa9449C8E42D5D49a2B5031A843747B342816dC13.png',
+    },
+    {
+      chainId: 355113,
+      address: '0xD89E302C8ac7AbAa4eC6016961e04692cccb6039',
+      name: 'FairNS',
+      symbol: 'FNS',
+      decimals: 18,
+      logoURI:
+        'https://raw.githubusercontent.com/chapswap/assets/main/token/testnet/0xD89E302C8ac7AbAa4eC6016961e04692cccb6039/logo.png',
+    },
+    {
+      chainId: 355113,
+      address: '0xbd9A5c1d9fBbBEC84633ec9Cb046C01fB79809f2',
+      name: 'Test USD',
+      symbol: 'tUSDT',
+      decimals: 18,
+      logoURI:
+        'https://raw.githubusercontent.com/chapswap/assets/main/token/testnet/0xbd9A5c1d9fBbBEC84633ec9Cb046C01fB79809f2/logo.png',
     },
   ],
 };
