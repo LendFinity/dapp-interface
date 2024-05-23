@@ -118,7 +118,7 @@ export const ROUTES = {
   markets: '/markets',
   staking: '/staking',
   governance: '/governance',
-  faucet: '/faucet',
+  faucet: 'https://bitfinity.network/faucet',
   migrationTool: '/v3-migration',
   marketMigrationTool: (marketName: CustomMarket) => `/v3-migration/?market=${marketName}`,
   dynamicRenderedProposal: (proposalId: number) =>
