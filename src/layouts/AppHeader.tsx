@@ -125,11 +125,11 @@ export function AppHeader() {
     setMobileMenuOpen(state);
   };
 
-  const disableTestnet = () => {
-    localStorage.setItem('testnetsEnabled', 'false');
-    // Set window.location to trigger a page reload when navigating to the the dashboard
-    window.location.href = '/';
-  };
+  // const disableTestnet = () => {
+  //   localStorage.setItem('testnetsEnabled', 'false');
+  //   // Set window.location to trigger a page reload when navigating to the the dashboard
+  //   window.location.href = '/';
+  // };
 
   const disableFork = () => {
     localStorage.setItem('testnetsEnabled', 'false');
@@ -153,17 +153,11 @@ export function AppHeader() {
         <Trans>Testnet mode is ON</Trans>
       </Typography>
       <Typography variant="description">
-        <Trans>The app is running in testnet mode. Learn how it works in</Trans>{' '}
-        <Link
-          href="https://docs.aave.com/faq/testing-aave"
-          style={{ fontSize: '14px', fontWeight: 400, textDecoration: 'underline' }}
-        >
-          FAQ.
-        </Link>
+        <Trans>The app is running in testnet mode.</Trans>{' '}
       </Typography>
-      <Button variant="outlined" sx={{ mt: '12px' }} onClick={disableTestnet}>
+      {/* <Button variant="outlined" sx={{ mt: '12px' }} onClick={disableTestnet}>
         <Trans>Disable testnet</Trans>
-      </Button>
+      </Button> */}
     </Box>
   );
 
@@ -216,7 +210,7 @@ export function AppHeader() {
           }}
           onClick={() => setMobileMenuOpen(false)}
         >
-          <img src={uiConfig.appLogo} alt="Lendfinity" width={sm ? 80 : 120} height={20} />
+          <img src={uiConfig.appLogo} alt="Lendfinity" width={sm ? 74 : 120} height={20} />
         </Box>
         <Box sx={{ mr: sm ? 1 : 3 }}>
           {ENABLE_TESTNET && (

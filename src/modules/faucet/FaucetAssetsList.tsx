@@ -135,7 +135,7 @@ export default function FaucetAssetsList() {
             <ListColumn maxWidth={280} align="right">
               {!currentMarketData.addresses.FAUCET ? (
                 <Button
-                  href="https://faucet.circle.com/"
+                  href="https://bitfinity.network/"
                   component={Link}
                   variant="contained"
                   endIcon={

@@ -45,8 +45,8 @@ msgid "<0>Ampleforth</0> is a rebasing asset. Visit the <1>documentation</1> to 
 msgstr "<0>Ampleforth</0> es un activo con rebase. Visita la <1>documentación</1> para aprender más."
 
 #: src/components/transactions/Borrow/ParameterChangewarning.tsx
-msgid "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation. Follow the <1>Aave governance forum</1> for updates."
-msgstr "<0>Atención:</0> Los cambios de parámetros a través de la gobernanza pueden alterar el factor de salud de tu cuenta y el riesgo de liquidación. Sigue el <1>foro de gobierno de Aave</1> para mantenerte actualizado."
+msgid "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation."
+msgstr "<0>Atención:</0> Los cambios de parámetros a través de la gobernanza pueden alterar el factor de salud de tu cuenta y el riesgo de liquidación."
 
 #: src/modules/dashboard/lists/SlippageList.tsx
 msgid "<0>Slippage tolerance </0><1>{selectedSlippage}% </1><2>{0}</2>"
@@ -2474,8 +2474,8 @@ msgid "The app is running in fork mode."
 msgstr "La aplicación se ejecuta en fork mode."
 
 #: src/layouts/AppHeader.tsx
-msgid "The app is running in testnet mode. Learn how it works in"
-msgstr "La aplicación se está ejecutando en testnet mode. Aprende como funciona en"
+msgid "The app is running in testnet mode."
+msgstr "La aplicación se está ejecutando en testnet mode."
 
 #: src/ui-config/errorMapping.tsx
 msgid "The caller of the function is not an AToken"

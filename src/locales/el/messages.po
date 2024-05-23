@@ -45,7 +45,7 @@ msgid "<0>Ampleforth</0> is a rebasing asset. Visit the <1>documentation</1> to 
 msgstr ""
 
 #: src/components/transactions/Borrow/ParameterChangewarning.tsx
-msgid "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation. Follow the <1>Aave governance forum</1> for updates."
+msgid "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation."
 msgstr ""
 
 #: src/modules/dashboard/lists/SlippageList.tsx
@@ -2475,7 +2475,7 @@ msgid "The app is running in fork mode."
 msgstr ""
 
 #: src/layouts/AppHeader.tsx
-msgid "The app is running in testnet mode. Learn how it works in"
+msgid "The app is running in testnet mode."
 msgstr ""
 
 #: src/ui-config/errorMapping.tsx

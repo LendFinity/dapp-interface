@@ -42,7 +42,7 @@ import { DetailsHFLine, TxModalDetails } from '../FlowCommons/TxModalDetails';
 import { BorrowActions } from './BorrowActions';
 import { BorrowAmountWarning } from './BorrowAmountWarning';
 import { GhoBorrowSuccessView } from './GhoBorrowSuccessView';
-import { ParameterChangewarning } from './ParameterChangewarning';
+import { BasicParameterChangewarning } from './ParameterChangewarning';
 
 export enum ErrorType {
   STABLE_RATE_NOT_ENABLED,
@@ -342,7 +342,8 @@ export const GhoBorrowModalContent = ({
         />
       )}
 
-      <ParameterChangewarning underlyingAsset={underlyingAsset} />
+      {/* <ParameterChangewarning underlyingAsset={underlyingAsset} /> */}
+      <BasicParameterChangewarning />
 
       <BorrowActions
         poolReserve={poolReserve}

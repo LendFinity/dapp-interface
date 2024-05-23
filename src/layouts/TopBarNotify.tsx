@@ -82,7 +82,7 @@ export default function TopBarNotify({ notifyText, learnMoreLink, buttonText }: 
             {!md && learnMoreLink ? (
               <Button
                 component="a"
-                // target={'_blank'} Todo option to pass as prop
+                target={'_blank'}
                 size="small"
                 href={learnMoreLink}
                 sx={{

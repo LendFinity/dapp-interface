@@ -65,7 +65,7 @@ const moreMenuItems: MoreMenuItem[] = [
   //   icon: <QuestionMarkCircleIcon />,
   // },
   {
-    link: 'https://docs.lendfinity.com/',
+    link: 'https://docs.lendfinity.xyz/',
     title: t`Documentation`,
     icon: <BookOpenIcon />,
   },

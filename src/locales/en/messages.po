@@ -40,6 +40,10 @@ msgid "<0>Ampleforth</0> is a rebasing asset. Visit the <1>documentation</1> to 
 msgstr "<0>Ampleforth</0> is a rebasing asset. Visit the <1>documentation</1> to learn more."
 
 #: src/components/transactions/Borrow/ParameterChangewarning.tsx
+msgid "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation."
+msgstr "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation."
+
+#: src/components/transactions/Borrow/ParameterChangewarning.tsx
 msgid "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation. Follow the <1>Aave governance forum</1> for updates."
 msgstr "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation. Follow the <1>Aave governance forum</1> for updates."
 
@@ -863,10 +867,6 @@ msgstr "Disable E-Mode"
 msgid "Disable fork"
 msgstr "Disable fork"
 
-#: src/layouts/AppHeader.tsx
-msgid "Disable testnet"
-msgstr "Disable testnet"
-
 #: src/components/transactions/CollateralChange/CollateralChangeActions.tsx
 msgid "Disable {symbol} as collateral"
 msgstr "Disable {symbol} as collateral"
@@ -1679,6 +1679,10 @@ msgstr "Operation not supported"
 msgid "Oracle price"
 msgstr "Oracle price"
 
+#: pages/reserve-overview.page.tsx
+msgid "Overview"
+msgstr "Overview"
+
 #: pages/404.page.tsx
 msgid "Page not found"
 msgstr "Page not found"
@@ -2407,8 +2411,8 @@ msgid "The app is running in fork mode."
 msgstr "The app is running in fork mode."
 
 #: src/layouts/AppHeader.tsx
-msgid "The app is running in testnet mode. Learn how it works in"
-msgstr "The app is running in testnet mode. Learn how it works in"
+msgid "The app is running in testnet mode."
+msgstr "The app is running in testnet mode."
 
 #: src/ui-config/errorMapping.tsx
 msgid "The caller of the function is not an AToken"
@@ -2827,11 +2831,6 @@ msgstr "Version 3"
 msgid "View"
 msgstr "View"
 
-#: src/modules/dashboard/DashboardContentWrapper.tsx
-#: src/modules/dashboard/DashboardContentWrapper.tsx
-msgid "View Transactions"
-msgstr "View Transactions"
-
 #: src/modules/governance/proposal/VotersListContainer.tsx
 msgid "View all votes"
 msgstr "View all votes"
@@ -3117,6 +3116,7 @@ msgstr "Your current loan to value based on your collateral supplied."
 msgid "Your health factor and loan to value determine the assurance of your collateral. To avoid liquidations you can supply more collateral or repay borrow positions."
 msgstr "Your health factor and loan to value determine the assurance of your collateral. To avoid liquidations you can supply more collateral or repay borrow positions."
 
+#: pages/reserve-overview.page.tsx
 #: src/modules/governance/UserGovernanceInfo.tsx
 #: src/modules/governance/VotingPowerInfoPanel.tsx
 #: src/modules/reserve-overview/ReserveActions.tsx

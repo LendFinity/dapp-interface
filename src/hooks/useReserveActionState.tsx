@@ -71,7 +71,7 @@ export const useReserveActionState = ({
                 {!currentMarketData.addresses.FAUCET ? (
                   <Button
                     variant="text"
-                    href="https://faucet.circle.com/"
+                    href="https://bitfinity.network/"
                     component={Link}
                     sx={{ verticalAlign: 'top' }}
                     disableRipple

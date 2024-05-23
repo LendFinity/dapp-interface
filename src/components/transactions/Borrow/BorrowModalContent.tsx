@@ -37,7 +37,7 @@ import {
 } from '../FlowCommons/TxModalDetails';
 import { BorrowActions } from './BorrowActions';
 import { BorrowAmountWarning } from './BorrowAmountWarning';
-import { ParameterChangewarning } from './ParameterChangewarning';
+import { BasicParameterChangewarning } from './ParameterChangewarning';
 
 export enum ErrorType {
   STABLE_RATE_NOT_ENABLED,
@@ -307,7 +307,8 @@ export const BorrowModalContent = ({
         />
       )}
 
-      <ParameterChangewarning underlyingAsset={underlyingAsset} />
+      {/* <ParameterChangewarning underlyingAsset={underlyingAsset} /> */}
+      <BasicParameterChangewarning />
 
       <BorrowActions
         poolReserve={poolReserve}

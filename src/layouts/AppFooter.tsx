@@ -19,16 +19,6 @@ const StyledLink = styled(Link)<StyledLinkProps>(({ theme }) => ({
 }));
 
 const FOOTER_ICONS = [
-  // {
-  //   href: 'https://hey.xyz/u/aave',
-  //   icon: <LensLogoIcon />,
-  //   title: 'Bitfinity',
-  // },
-  {
-    href: 'https://medium.com/@lendfinity.xyz',
-    icon: <MediumIcon />,
-    title: 'Medium',
-  },
   {
     href: 'https://x.com/lendfinity_xyz',
     icon: <Twitter />,
@@ -40,11 +30,50 @@ const FOOTER_ICONS = [
     title: 'Discord',
   },
   {
+    href: 'https://medium.com/@lendfinity.xyz',
+    icon: <MediumIcon />,
+    title: 'Medium',
+  },
+  {
     href: 'https://github.com/LendFinity',
     icon: <GitHub />,
     title: 'Github',
   },
 ];
+
+export function MobileMenuFooter() {
+  return (
+    <Box
+      sx={(theme) => ({
+        display: 'flex',
+        padding: '20px 22px',
+        width: '100%',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        gap: '22px',
+        flexDirection: 'column',
+        boxShadow:
+          theme.palette.mode === 'light'
+            ? 'inset 0px 1px 0px rgba(0, 0, 0, 0.04)'
+            : 'inset 0px 1px 0px rgba(255, 255, 255, 0.12)',
+      })}
+    >
+      <Box sx={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+        {FOOTER_ICONS.map((icon) => (
+          <StyledLink href={icon.href} key={icon.title}>
+            <SvgIcon
+              sx={{
+                fontSize: 24,
+              }}
+            >
+              {icon.icon}
+            </SvgIcon>
+          </StyledLink>
+        ))}
+      </Box>
+    </Box>
+  );
+}
 
 export function AppFooter() {
   // const [setAnalyticsConfigOpen, setFeedbackOpen] = useRootStore((store) => [
@@ -111,7 +140,8 @@ export function AppFooter() {
     >
       <Box sx={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
         {FOOTER_LINKS.map((link) => (
-          <StyledLink onClick={link.onClick} key={link.key} href={link.href}>
+          // <StyledLink onClick={link.onClick} key={link.key} href={link.href}>
+          <StyledLink key={link.key} href={link.href}>
             <Typography variant="caption">{link.label}</Typography>
           </StyledLink>
         ))}

@@ -1,12 +1,17 @@
 import { ChainId } from '@aave/contract-helpers';
-import { Trans } from '@lingui/macro';
-import { Box, Button, useMediaQuery, useTheme } from '@mui/material';
-import { useRouter } from 'next/router';
-import { ROUTES } from 'src/components/primitives/Link';
-import { useWeb3Context } from 'src/libs/hooks/useWeb3Context';
+// import { Trans } from '@lingui/macro';
+import {
+  Box,
+  // Button,
+  useMediaQuery,
+  useTheme,
+} from '@mui/material';
+// import { useRouter } from 'next/router';
+// import { ROUTES } from 'src/components/primitives/Link';
+// import { useWeb3Context } from 'src/libs/hooks/useWeb3Context';
 import { useRootStore } from 'src/store/root';
-import { AUTH } from 'src/utils/mixPanelEvents';
 
+// import { AUTH } from 'src/utils/mixPanelEvents';
 import { BorrowAssetsList } from './lists/BorrowAssetsList/BorrowAssetsList';
 import { BorrowedPositionsList } from './lists/BorrowedPositionsList/BorrowedPositionsList';
 import { SuppliedPositionsList } from './lists/SuppliedPositionsList/SuppliedPositionsList';
@@ -18,17 +23,17 @@ interface DashboardContentWrapperProps {
 
 export const DashboardContentWrapper = ({ isBorrow }: DashboardContentWrapperProps) => {
   const { breakpoints } = useTheme();
-  const { currentAccount } = useWeb3Context();
-  const router = useRouter();
-  const trackEvent = useRootStore((store) => store.trackEvent);
+  // const { currentAccount } = useWeb3Context();
+  // const router = useRouter();
+  // const trackEvent = useRootStore((store) => store.trackEvent);
 
   const currentMarketData = useRootStore((store) => store.currentMarketData);
   const isDesktop = useMediaQuery(breakpoints.up('lg'));
   const paperWidth = isDesktop ? 'calc(50% - 8px)' : '100%';
 
-  const downToLg = useMediaQuery(breakpoints.down('lg'));
+  // const downToLg = useMediaQuery(breakpoints.down('lg'));
 
-  const upFromSm = useMediaQuery(breakpoints.up('xsm'));
+  // const upFromSm = useMediaQuery(breakpoints.up('xsm'));
 
   return (
     <Box>
@@ -48,7 +53,7 @@ export const DashboardContentWrapper = ({ isBorrow }: DashboardContentWrapperPro
             width: paperWidth,
           }}
         >
-          {currentAccount && !isBorrow && downToLg && (
+          {/* {currentAccount && !isBorrow && downToLg && (
             <Box>
               <Button
                 sx={{
@@ -67,7 +72,7 @@ export const DashboardContentWrapper = ({ isBorrow }: DashboardContentWrapperPro
                 <Trans>View Transactions</Trans>
               </Button>
             </Box>
-          )}
+          )} */}
 
           <SuppliedPositionsList />
           <SupplyAssetsList />
@@ -81,7 +86,7 @@ export const DashboardContentWrapper = ({ isBorrow }: DashboardContentWrapperPro
             width: paperWidth,
           }}
         >
-          {currentAccount && (
+          {/* {currentAccount && (
             <Box
               sx={{
                 position: 'absolute',
@@ -103,7 +108,7 @@ export const DashboardContentWrapper = ({ isBorrow }: DashboardContentWrapperPro
                 <Trans>View Transactions</Trans>
               </Button>
             </Box>
-          )}
+          )} */}
 
           <BorrowedPositionsList />
           <BorrowAssetsList />
