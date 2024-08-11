@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro';
-import { GitHub, Twitter } from '@mui/icons-material';
+import { GitHub, X } from '@mui/icons-material';
 import { Box, styled, SvgIcon, Typography } from '@mui/material';
 import DiscordIcon from 'public/icons/discord.svg';
 import MediumIcon from 'public/icons/medium.svg';
@@ -21,7 +21,7 @@ const StyledLink = styled(Link)<StyledLinkProps>(({ theme }) => ({
 const FOOTER_ICONS = [
   {
     href: 'https://x.com/lendfinity_xyz',
-    icon: <Twitter />,
+    icon: <X />,
     title: 'X',
   },
   {
