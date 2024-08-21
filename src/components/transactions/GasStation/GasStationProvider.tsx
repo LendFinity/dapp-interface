@@ -30,7 +30,7 @@ function gasStationReducer(state: State, action: Action) {
   }
 }
 
-export const GasStationProvider: React.FC = ({ children }) => {
+export const GasStationProvider: React.FC<any> = ({ children }) => {
   const [state, dispatch] = React.useReducer(gasStationReducer, {
     gasOption: GasOption.Normal,
     customGas: '100',

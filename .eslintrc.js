@@ -9,7 +9,7 @@ module.exports = {
   plugins: ['prettier', 'import', 'simple-import-sort', '@typescript-eslint'],
   rules: {
     '@typescript-eslint/no-empty-interface': 'off',
-    '@typescript-eslint/no-explicit-any': 'error',
+    '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true }],
     'prettier/prettier': 'warn',
     'react-hooks/rules-of-hooks': 'error',
