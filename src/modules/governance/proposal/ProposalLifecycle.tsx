@@ -225,6 +225,13 @@ export const ProposalLifecycle = ({ proposal }: { proposal: Proposal | undefined
             padding: 0,
           },
         }}
+        placeholder=""
+        onPointerEnterCapture={() => {
+          return;
+        }}
+        onPointerLeaveCapture={() => {
+          return;
+        }}
       >
         {proposalSteps.map((elem) => (
           <ProposalStep key={elem.stepName} {...elem} />
@@ -342,7 +349,15 @@ const ProposalStep = ({
           )}
         </Box>
         {substeps && subtimelineOpen && (
-          <Timeline>
+          <Timeline
+            placeholder=""
+            onPointerEnterCapture={() => {
+              return;
+            }}
+            onPointerLeaveCapture={() => {
+              return;
+            }}
+          >
             {substeps.map((elem) => (
               <ProposalStep key={elem.stepName?.toString()} {...elem} />
             ))}

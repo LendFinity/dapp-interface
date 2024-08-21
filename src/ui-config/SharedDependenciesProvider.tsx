@@ -40,7 +40,7 @@ interface SharedDependenciesContext {
 
 const SharedDependenciesContext = createContext<SharedDependenciesContext | null>(null);
 
-export const SharedDependenciesProvider: React.FC = ({ children }) => {
+export const SharedDependenciesProvider: React.FC<any> = ({ children }) => {
   const currentMarketData = useRootStore((state) => state.currentMarketData);
 
   const getGovernanceProvider = (chainId: number) => {

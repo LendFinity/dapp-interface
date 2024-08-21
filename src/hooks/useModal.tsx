@@ -133,7 +133,7 @@ export const ModalContext = createContext<ModalContextType<ModalArgsType>>(
   {} as ModalContextType<ModalArgsType>
 );
 
-export const ModalContextProvider: React.FC = ({ children }) => {
+export const ModalContextProvider: React.FC<{ children: any }> = ({ children }) => {
   const { setSwitchNetworkError } = useWeb3Context();
   // contains the current modal open state if any
   const [type, setType] = useState<ModalType>();
