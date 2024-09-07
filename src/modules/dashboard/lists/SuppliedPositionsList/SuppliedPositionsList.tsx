@@ -72,6 +72,10 @@ export const SuppliedPositionsList = () => {
       .map((userReserve) => ({
         ...userReserve,
         supplyAPY: userReserve.reserve.supplyAPY, // Note: added only for table sort
+        detailsAddress: userReserve.underlyingAsset,
+        underlyingAsset: userReserve.reserve.isWrappedBaseAsset
+          ? API_ETH_MOCK_ADDRESS.toLowerCase()
+          : userReserve.underlyingAsset,
         reserve: {
           ...userReserve.reserve,
           ...(userReserve.reserve.isWrappedBaseAsset

@@ -22,6 +22,7 @@ export const SuppliedPositionsListItem = ({
   underlyingBalanceUSD,
   usageAsCollateralEnabledOnUser,
   underlyingAsset,
+  detailsAddress,
 }: DashboardReserve) => {
   const { user } = useAppDataContext();
   const { isIsolated, aIncentivesData, isFrozen, isActive, isPaused } = reserve;
@@ -48,7 +49,7 @@ export const SuppliedPositionsListItem = ({
       symbol={reserve.symbol}
       iconSymbol={reserve.iconSymbol}
       name={reserve.name}
-      detailsAddress={underlyingAsset}
+      detailsAddress={detailsAddress}
       currentMarket={currentMarket}
       frozen={reserve.isFrozen}
       paused={isPaused}
