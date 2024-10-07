@@ -1,7 +1,6 @@
 import { Trans } from '@lingui/macro';
-import { GitHub, X } from '@mui/icons-material';
+import { GitHub, Telegram, X } from '@mui/icons-material';
 import { Box, styled, SvgIcon, Typography } from '@mui/material';
-import DiscordIcon from 'public/icons/discord.svg';
 import MediumIcon from 'public/icons/medium.svg';
 import { Link } from 'src/components/primitives/Link';
 
@@ -20,14 +19,14 @@ const StyledLink = styled(Link)<StyledLinkProps>(({ theme }) => ({
 
 const FOOTER_ICONS = [
   {
+    href: 'https://t.me/lendfinity',
+    icon: <Telegram />,
+    title: 'Telegram',
+  },
+  {
     href: 'https://x.com/lendfinity_xyz',
     icon: <X />,
     title: 'X',
-  },
-  {
-    href: 'https://discord.gg/2yKFhWyShB',
-    icon: <DiscordIcon />,
-    title: 'Discord',
   },
   {
     href: 'https://medium.com/@lendfinity.xyz',
