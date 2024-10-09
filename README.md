@@ -156,7 +156,7 @@ export const chainlinkEthUsdAggregatorProxy: Record<string, string> = {
 
 6. Configure .env
 
-Make sure your market configuration is set to Aave, so:
+Make sure your market configuration is set to Bitfinity, so:
 
 ```bash
 MARKET_NAME=Bitfinity
