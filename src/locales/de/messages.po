@@ -2551,7 +2551,7 @@ msgid "There was some error. Please try changing the parameters or <0><1>copy th
 msgstr "Es ist ein Fehler aufgetreten. Bitte versuchen Sie, die Parameter zu ändern, oder <0><1>kopieren Sie den Fehler</1></0>"
 
 #: src/modules/markets/MarketAssetsListContainer.tsx
-msgid "These assets are temporarily frozen or paused by Aave community decisions, meaning that further supply / borrow, or rate swap of these assets are unavailable. Withdrawals and debt repayments are allowed. Follow the <0>Aave governance forum</0> for further updates."
+msgid "These assets are temporarily frozen or paused by Lendfinity community decisions, meaning that further supply / borrow, or rate swap of these assets are unavailable. Withdrawals and debt repayments are allowed."
 msgstr "Diese Vermögenswerte werden durch Entscheidungen der Aave-Community vorübergehend eingefroren oder pausiert, was bedeutet, dass weitere Lieferungen/Kredite oder Zinsswaps dieser Vermögenswerte nicht verfügbar sind. Abhebungen und Schuldentilgungen sind erlaubt. Folgen Sie dem <0>Aave-Governance-Forum</0> für weitere Updates."
 
 #: src/components/transactions/Withdraw/WithdrawError.tsx
