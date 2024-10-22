@@ -578,6 +578,10 @@ msgid "Both"
 msgstr "Both"
 
 #: src/ui-config/menu-items/index.tsx
+msgid "Bridge"
+msgstr "Bridge"
+
+#: src/ui-config/menu-items/index.tsx
 msgid "Buy Crypto With Fiat"
 msgstr "Buy Crypto With Fiat"
 

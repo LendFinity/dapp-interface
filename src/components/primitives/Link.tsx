@@ -118,6 +118,7 @@ export const ROUTES = {
   staking: '/staking',
   governance: '/governance',
   faucet: 'https://bitfinity.network/faucet',
+  bridge: 'https://bridge.omnity.network/icp',
   migrationTool: '/v3-migration',
   marketMigrationTool: (marketName: CustomMarket) => `/v3-migration/?market=${marketName}`,
   dynamicRenderedProposal: (proposalId: number) =>
