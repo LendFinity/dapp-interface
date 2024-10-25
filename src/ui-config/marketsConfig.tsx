@@ -92,6 +92,7 @@ export enum CustomMarket {
   proto_sepolia_v3 = 'proto_sepolia_v3',
   proto_base_sepolia_v3 = 'proto_base_sepolia_v3',
   // v3 mainnets
+  proto_bitfinity_v3 = 'proto_bitfinity_v3',
   proto_mainnet_v3 = 'proto_mainnet_v3',
   proto_optimism_v3 = 'proto_optimism_v3',
   proto_fantom_v3 = 'proto_fantom_v3',
@@ -117,6 +118,19 @@ export enum CustomMarket {
 export const marketsData: {
   [key in keyof typeof CustomMarket]: MarketDataType;
 } = {
+  [CustomMarket.proto_bitfinity_v3]: {
+    marketTitle: 'Bitfinity',
+    market: CustomMarket.proto_bitfinity_v3,
+    v3: true,
+    chainId: 355110 as ChainId,
+    addresses: {
+      LENDING_POOL_ADDRESS_PROVIDER: '0xBD732A6240b6525D5E91001984ba47e8B8C89305',
+      LENDING_POOL: '0x8Af2496be337886c843816d969bD3F2a7A8c2d3E',
+      WETH_GATEWAY: '0x99467c06e05872761e3D88B3a9Ea69f42EC560A4',
+      WALLET_BALANCE_PROVIDER: '0xEEF3a71E0bb5aAc2A9c9420558780af1d4421660',
+      UI_POOL_DATA_PROVIDER: '0x3247F90893725486c79bE53ABC6eFf3161d439a2',
+    },
+  },
   [CustomMarket.proto_bitfinity_testnet_v3]: {
     marketTitle: 'Bitfinity Testnet',
     market: CustomMarket.proto_bitfinity_testnet_v3,

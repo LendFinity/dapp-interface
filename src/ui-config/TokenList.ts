@@ -96,6 +96,17 @@ const NETWORK_ASSETS: TokenInfo[] = [
       isNative: true,
     },
   },
+  {
+    name: 'Bitfinity',
+    symbol: 'BFT',
+    decimals: 18,
+    address: API_ETH_MOCK_ADDRESS,
+    chainId: 355110,
+    logoURI: 'https://rsusi-aqaaa-aaaag-abhda-cai.ic0.app/images/coins/BFT.png',
+    extensions: {
+      isNative: true,
+    },
+  },
 
   // NOTE L2 ETH
   {

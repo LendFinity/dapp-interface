@@ -54,6 +54,15 @@ export type BaseNetworkConfig = Omit<NetworkConfig, 'explorerLinkBuilder'>;
 const ratesHistoryApiUrl = `${process.env.NEXT_PUBLIC_API_BASEURL}/data/rates-history`;
 
 export const networkConfigs: Record<string, BaseNetworkConfig> = {
+  355110: {
+    name: 'Bitfinity',
+    publicJsonRPCUrl: ['https://mainnet.bitfinity.network'],
+    baseAssetSymbol: 'BFT',
+    wrappedBaseAssetSymbol: 'WBFT',
+    baseAssetDecimals: 18,
+    explorerLink: 'https://explorer.mainnet.bitfinity.network/',
+    networkLogoPath: '/icons/networks/bitfinity.svg',
+  },
   355113: {
     name: 'Bitfinity Testnet',
     publicJsonRPCUrl: ['https://testnet.bitfinity.network'],

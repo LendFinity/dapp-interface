@@ -17,7 +17,7 @@ import { BasicModal } from '../../primitives/BasicModal';
 import { supportedNetworksWithEnabledMarket } from './common';
 import { SwitchModalContent } from './SwitchModalContent';
 
-const defaultNetwork = marketsData[CustomMarket.proto_bitfinity_testnet_v3];
+const defaultNetwork = marketsData[CustomMarket.proto_bitfinity_v3];
 
 interface SwitchModalContentWrapperProps {
   user: string;

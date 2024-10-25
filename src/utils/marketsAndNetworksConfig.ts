@@ -22,9 +22,8 @@ export type Pool = {
 
 export const STAGING_ENV = process.env.NEXT_PUBLIC_ENV === 'staging';
 export const PROD_ENV = !process.env.NEXT_PUBLIC_ENV || process.env.NEXT_PUBLIC_ENV === 'prod';
-export const ENABLE_TESTNET = true;
-// export const ENABLE_TESTNET =
-//   PROD_ENV && global?.window?.localStorage.getItem('testnetsEnabled') === 'true';
+export const ENABLE_TESTNET =
+  PROD_ENV && global?.window?.localStorage.getItem('testnetsEnabled') === 'true';
 
 // determines if forks should be shown
 export const FORK_ENABLED =
@@ -121,7 +120,9 @@ export function getSupportedChainIds(): number[] {
 //   getSupportedChainIds().includes(marketsData[key as keyof typeof CustomMarket].chainId)
 // ) as CustomMarket[];
 
-export const availableMarkets: CustomMarket[] = [CustomMarket.proto_bitfinity_testnet_v3];
+export const availableMarkets: CustomMarket[] = ENABLE_TESTNET
+  ? [CustomMarket.proto_bitfinity_testnet_v3]
+  : [CustomMarket.proto_bitfinity_v3];
 
 const linkBuilder =
   ({ baseUrl, addressPrefix = 'address', txPrefix = 'tx' }: ExplorerLinkBuilderConfig) =>
