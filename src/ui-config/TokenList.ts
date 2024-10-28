@@ -12721,6 +12721,34 @@ export const TOKEN_LIST: TokenList = {
     },
     // Bitfinity Tokens
     {
+      name: 'HOPE•YOU•GET•RICH',
+      symbol: 'RICH.OT',
+      decimals: 18,
+      address: '0xfd4de66eca49799bdde66eb33654e2198ab7bba4',
+      chainId: 355110,
+    },
+    {
+      name: 'Internet Computer',
+      symbol: 'ICP',
+      decimals: 8,
+      address: '0x51ccde9ca75d95bb55ece1775fcbff91324b18a6',
+      chainId: 355110,
+    },
+    {
+      name: 'ckBTC',
+      symbol: 'ckBTC',
+      decimals: 18,
+      address: '0x56bf74ef5d4ad161d2d8d5d576e70108f152cd35',
+      chainId: 355110,
+    },
+    {
+      name: 'ckUSDC',
+      symbol: 'ckUSDC',
+      decimals: 18,
+      address: '0x3662afef38c94a6184cdfce8dcc60e7c305b8299',
+      chainId: 355110,
+    },
+    {
       chainId: 355113,
       address: '0x9581aa53E089F4E8f0B3c566f00121DF7c83c83B',
       name: 'ChapSwap',
