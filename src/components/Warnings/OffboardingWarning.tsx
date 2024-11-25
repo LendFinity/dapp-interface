@@ -1,4 +1,5 @@
 import { Trans } from '@lingui/macro';
+import { FC } from 'react';
 import { CustomMarket } from 'src/ui-config/marketsConfig';
 
 export const AssetsBeingOffboarded: { [market: string]: { [symbol: string]: string } } = {
@@ -8,7 +9,7 @@ export const AssetsBeingOffboarded: { [market: string]: { [symbol: string]: stri
   },
 };
 
-export const OffboardingWarning = () => {
+export const OffboardingWarning: FC<any> = () => {
   return (
     <Trans>
       This asset is planned to be offboarded due to a Lendfinity Protocol Governance decision.{' '}
