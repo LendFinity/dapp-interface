@@ -1,4 +1,5 @@
 import { Trans } from '@lingui/macro';
+import { FC } from 'react';
 
 // import { getFrozenProposalLink } from '../infoTooltips/FrozenTooltip';
 // import { Link } from '../primitives/Link';
@@ -8,7 +9,7 @@ import { Trans } from '@lingui/macro';
 //   currentMarket: string;
 // }
 
-export const BorrowDisabledWarning = () => {
+export const BorrowDisabledWarning: FC<any> = () => {
   return (
     <Trans>
       Borrowing is disabled due to a Lendfinity community decision.{' '}
