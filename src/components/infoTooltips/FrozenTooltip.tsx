@@ -1,6 +1,7 @@
 import { ExclamationIcon } from '@heroicons/react/outline';
 import { Trans } from '@lingui/macro';
 import { Box, SvgIcon } from '@mui/material';
+import { FC } from 'react';
 
 // import { frozenProposalMap } from '../../utils/marketsAndNetworksConfig';
 import { ContentWithTooltip } from '../ContentWithTooltip';
@@ -25,7 +26,7 @@ import { ContentWithTooltip } from '../ContentWithTooltip';
 //   }
 // };
 
-export const FrozenTooltip = () => {
+export const FrozenTooltip: FC<any> = () => {
   return (
     <ContentWithTooltip
       tooltipContent={
