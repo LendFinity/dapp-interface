@@ -3,7 +3,6 @@ import { Box, Stack, Typography } from '@mui/material';
 import React from 'react';
 import { MeritIncentivesButton } from 'src/components/incentives/IncentivesButton';
 import { FormattedNumber } from 'src/components/primitives/FormattedNumber';
-import { Link } from 'src/components/primitives/Link';
 import { TokenIcon } from 'src/components/primitives/TokenIcon';
 import { TextWithTooltip } from 'src/components/TextWithTooltip';
 import { StakeTokenFormatted, useGeneralStakeUiData } from 'src/hooks/stake/useGeneralStakeUiData';
@@ -101,9 +100,9 @@ export const StakingPanelNoWallet: React.FC<StakingPanelNoWalletProps> = ({
           {distributionEnded && stakedToken === 'GHO' && (
             <TextWithTooltip wrapperProps={{ marginBottom: '1px' }} iconColor="warning.main">
               <Trans>
-                The current incentives period, decided on by the Aave community, has ended.
+                The current incentives period, decided on by the Lendfinity community, has ended.
                 Governance is in the process on renewing, check for updates.{' '}
-                <Link
+                {/* <Link
                   href="https://governance.aave.com"
                   sx={{ textDecoration: 'underline' }}
                   variant="caption"
@@ -111,7 +110,7 @@ export const StakingPanelNoWallet: React.FC<StakingPanelNoWalletProps> = ({
                 >
                   Learn more
                 </Link>
-                .
+                . */}
               </Trans>
             </TextWithTooltip>
           )}

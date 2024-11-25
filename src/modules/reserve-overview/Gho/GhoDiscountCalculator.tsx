@@ -6,12 +6,11 @@ import { Alert, Box, Skeleton, SvgIcon, Typography, useMediaQuery, useTheme } fr
 import { Stack } from '@mui/system';
 import { ReactNode, useEffect, useState } from 'react';
 import { FormattedNumber } from 'src/components/primitives/FormattedNumber';
-import { Link } from 'src/components/primitives/Link';
 import { TokenIcon } from 'src/components/primitives/TokenIcon';
 import { ReserveOverviewBox } from 'src/components/ReserveOverviewBox';
 import { useAppDataContext } from 'src/hooks/app-data-provider/useAppDataProvider';
 import { useRootStore } from 'src/store/root';
-import { GENERAL, RESERVE_DETAILS } from 'src/utils/mixPanelEvents';
+import { RESERVE_DETAILS } from 'src/utils/mixPanelEvents';
 
 import { ESupportedTimeRanges } from '../TimeRangeSelector';
 import { CalculatorInput } from './CalculatorInput';
@@ -338,7 +337,7 @@ const GhoDiscountParametersComponent: React.FC<{
   downToXsm: boolean;
   ghoReserveData: FormattedGhoReserveData;
 }> = ({ loading, downToXsm, ghoReserveData }) => {
-  const trackEvent = useRootStore((store) => store.trackEvent);
+  // const trackEvent = useRootStore((store) => store.trackEvent);
 
   return (
     <Box sx={{ flexGrow: 1, minWidth: 0, maxWidth: '100%', width: '100%' }}>
@@ -428,9 +427,9 @@ const GhoDiscountParametersComponent: React.FC<{
       </Box>
       <Typography variant="caption" color="text.secondary">
         <Trans>
-          Discount parameters are decided by the Aave community and may be changed over time. Check
-          Governance for updates and vote to participate.{' '}
-          <Link
+          Discount parameters are decided by the Lendfinity community and may be changed over time.
+          Check Governance for updates and vote to participate.{' '}
+          {/* <Link
             href="https://governance.aave.com"
             sx={{ textDecoration: 'underline' }}
             variant="caption"
@@ -442,7 +441,7 @@ const GhoDiscountParametersComponent: React.FC<{
             }}
           >
             Learn more
-          </Link>
+          </Link> */}
         </Trans>
       </Typography>
     </Box>

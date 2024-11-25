@@ -309,9 +309,9 @@ export const StakingPanel: React.FC<StakingPanelProps> = ({
             {distributionEnded && (
               <TextWithTooltip iconColor="warning.main">
                 <Trans>
-                  The current incentives period, decided on by the Aave community, has ended.
+                  The current incentives period, decided on by the Lendfinity community, has ended.
                   Governance is in the process on renewing, check for updates.{' '}
-                  <Link
+                  {/* <Link
                     href="https://governance.aave.com"
                     sx={{ textDecoration: 'underline' }}
                     variant="caption"
@@ -319,7 +319,7 @@ export const StakingPanel: React.FC<StakingPanelProps> = ({
                   >
                     Learn more
                   </Link>
-                  .
+                  . */}
                 </Trans>
               </TextWithTooltip>
             )}

@@ -1,7 +1,6 @@
 import { ExternalLinkIcon } from '@heroicons/react/solid';
 import { Trans } from '@lingui/macro';
 import { Box, Button, Divider, SvgIcon } from '@mui/material';
-import { getFrozenProposalLink } from 'src/components/infoTooltips/FrozenTooltip';
 import { PausedTooltipText } from 'src/components/infoTooltips/PausedTooltip';
 import { FormattedNumber } from 'src/components/primitives/FormattedNumber';
 import { Link } from 'src/components/primitives/Link';
@@ -51,12 +50,12 @@ export const ReserveConfiguration: React.FC<ReserveConfigurationProps> = ({ rese
           <Warning sx={{ mt: '16px', mb: '40px' }} severity="error">
             <Trans>
               This asset is frozen due to a Lendfinity community decision.{' '}
-              <Link
+              {/* <Link
                 href={getFrozenProposalLink(reserve.symbol, currentMarket)}
                 sx={{ textDecoration: 'underline' }}
               >
                 <Trans>More details</Trans>
-              </Link>
+              </Link> */}
             </Trans>
           </Warning>
         ) : offboardingDiscussion ? (
@@ -77,14 +76,14 @@ export const ReserveConfiguration: React.FC<ReserveConfigurationProps> = ({ rese
               <Trans>
                 MAI has been paused due to a community decision. Supply, borrows and repays are
                 impacted.{' '}
-                <Link
+                {/* <Link
                   href={
                     'https://governance.aave.com/t/arfc-add-mai-to-arbitrum-aave-v3-market/12759/8'
                   }
                   sx={{ textDecoration: 'underline' }}
                 >
                   <Trans>More details</Trans>
-                </Link>
+                </Link> */}
               </Trans>
             </Warning>
           ) : (

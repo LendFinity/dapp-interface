@@ -23,8 +23,8 @@ export enum WalletType {
   READ_ONLY_MODE = 'read_only_mode',
 }
 
-const APP_NAME = 'Aave';
-const APP_LOGO_URL = 'https://aave.com/favicon.ico';
+const APP_NAME = 'Lendfinity';
+const APP_LOGO_URL = 'https://app.lendfinity.com/favicon.ico';
 
 const mockProvider = {
   request: Promise.resolve(null),

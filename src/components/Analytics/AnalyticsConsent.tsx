@@ -1,7 +1,6 @@
 import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CookieConsent as AnalyticsConsentBanner } from 'react-cookie-consent';
-import { Link } from 'src/components/primitives/Link';
 import { useRootStore } from 'src/store/root';
 
 export default function AnalyticsBanner() {
@@ -115,11 +114,12 @@ export default function AnalyticsBanner() {
         <Box>
           We may employ on-the-spot tracking techniques during your browsing session to collect data
           on your interactions, preferences, and behaviour. This data helps us personalise your
-          experience and improve our services. See our
+          experience and improve our services.
+          {/* See our
           <Link sx={{ color: theme.palette.info.main }} href="https://aave.com/privacy-policy/">
             {' '}
             Privacy Policy.
-          </Link>
+          </Link> */}
         </Box>
       </AnalyticsConsentBanner>
     </>
