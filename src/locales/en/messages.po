@@ -40,20 +40,13 @@ msgid "<0>Ampleforth</0> is a rebasing asset."
 msgstr "<0>Ampleforth</0> is a rebasing asset."
 
 #: src/components/transactions/Borrow/ParameterChangewarning.tsx
+#: src/components/transactions/Borrow/ParameterChangewarning.tsx
 msgid "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation."
 msgstr "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation."
-
-#: src/components/transactions/Borrow/ParameterChangewarning.tsx
-msgid "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation. Follow the <1>Aave governance forum</1> for updates."
-msgstr "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation. Follow the <1>Aave governance forum</1> for updates."
 
 #: src/modules/dashboard/lists/SlippageList.tsx
 msgid "<0>Slippage tolerance </0><1>{selectedSlippage}% </1><2>{0}</2>"
 msgstr "<0>Slippage tolerance </0><1>{selectedSlippage}% </1><2>{0}</2>"
-
-#: src/modules/staking/StakingHeader.tsx
-msgid "AAVE, GHO, and ABPT holders (Ethereum network only) can stake their assets in the Safety Module to add more security to the protocol and earn Safety Incentives. In the case of a shortfall event, your stake can be slashed to cover the deficit, providing an additional layer of protection for the protocol."
-msgstr "AAVE, GHO, and ABPT holders (Ethereum network only) can stake their assets in the Safety Module to add more security to the protocol and earn Safety Incentives. In the case of a shortfall event, your stake can be slashed to cover the deficit, providing an additional layer of protection for the protocol."
 
 #: src/components/incentives/IncentivesTooltipContent.tsx
 #: src/components/incentives/IncentivesTooltipContent.tsx
@@ -533,8 +526,8 @@ msgid "Borrowing is currently unavailable for {0}."
 msgstr "Borrowing is currently unavailable for {0}."
 
 #: src/components/Warnings/BorrowDisabledWarning.tsx
-msgid "Borrowing is disabled due to an Aave community decision. <0>More details</0>"
-msgstr "Borrowing is disabled due to an Aave community decision. <0>More details</0>"
+msgid "Borrowing is disabled due to a Lendfinity community decision."
+msgstr "Borrowing is disabled due to a Lendfinity community decision."
 
 #: src/ui-config/errorMapping.tsx
 msgid "Borrowing is not enabled"
@@ -905,8 +898,8 @@ msgid "Discount model parameters"
 msgstr "Discount model parameters"
 
 #: src/modules/reserve-overview/Gho/GhoDiscountCalculator.tsx
-msgid "Discount parameters are decided by the Aave community and may be changed over time. Check Governance for updates and vote to participate. <0>Learn more</0>"
-msgstr "Discount parameters are decided by the Aave community and may be changed over time. Check Governance for updates and vote to participate. <0>Learn more</0>"
+msgid "Discount parameters are decided by the Lendfinity community and may be changed over time. Check Governance for updates and vote to participate."
+msgstr "Discount parameters are decided by the Lendfinity community and may be changed over time. Check Governance for updates and vote to participate."
 
 #: src/modules/reserve-overview/Gho/GhoDiscountCalculator.tsx
 msgid "Discountable amount"
@@ -1289,6 +1282,10 @@ msgstr "Isolated assets have limited borrowing power and other assets cannot be 
 msgid "Join the community discussion"
 msgstr "Join the community discussion"
 
+#: src/modules/staking/StakingHeader.tsx
+msgid "LEND holders can stake their assets in the Safety Module to add more security to the protocol and earn Safety Incentives. In the case of a shortfall event, your stake can be slashed to cover the deficit, providing an additional layer of protection for the protocol."
+msgstr "LEND holders can stake their assets in the Safety Module to add more security to the protocol and earn Safety Incentives. In the case of a shortfall event, your stake can be slashed to cover the deficit, providing an additional layer of protection for the protocol."
+
 #: src/layouts/components/LanguageSwitcher.tsx
 msgid "Language"
 msgstr "Language"
@@ -1376,8 +1373,8 @@ msgid "Ltv validation failed"
 msgstr "Ltv validation failed"
 
 #: src/modules/reserve-overview/ReserveConfiguration.tsx
-msgid "MAI has been paused due to a community decision. Supply, borrows and repays are impacted. <0>More details</0>"
-msgstr "MAI has been paused due to a community decision. Supply, borrows and repays are impacted. <0>More details</0>"
+msgid "MAI has been paused due to a community decision. Supply, borrows and repays are impacted."
+msgstr "MAI has been paused due to a community decision. Supply, borrows and repays are impacted."
 
 #: src/modules/dashboard/LiquidationRiskParametresModal/components/LTVContent.tsx
 msgid "MAX"
@@ -2424,8 +2421,8 @@ msgstr "The cooldown period is {0}. After {1} of cooldown, you will enter unstak
 
 #: src/modules/staking/StakingPanel.tsx
 #: src/modules/staking/StakingPanelNoWallet.tsx
-msgid "The current incentives period, decided on by the Aave community, has ended. Governance is in the process on renewing, check for updates. <0>Learn more</0>."
-msgstr "The current incentives period, decided on by the Aave community, has ended. Governance is in the process on renewing, check for updates. <0>Learn more</0>."
+msgid "The current incentives period, decided on by the Lendfinity community, has ended. Governance is in the process on renewing, check for updates."
+msgstr "The current incentives period, decided on by the Lendfinity community, has ended. Governance is in the process on renewing, check for updates."
 
 #: src/modules/migration/MigrationBottomPanel.tsx
 msgid "The loan to value of the migrated positions would cause liquidation. Increase migrated collateral or reduce migrated borrow to continue."
@@ -2516,8 +2513,8 @@ msgid "This asset has reached its supply cap. Nothing is available to be supplie
 msgstr "This asset has reached its supply cap. Nothing is available to be supplied from this market."
 
 #: src/components/infoTooltips/FrozenTooltip.tsx
-msgid "This asset is frozen due to a Bitfinity Protocol Governance decision. <0>More details</0>"
-msgstr "This asset is frozen due to a Bitfinity Protocol Governance decision. <0>More details</0>"
+msgid "This asset is frozen due to a Lendfinity Protocol Governance decision."
+msgstr "This asset is frozen due to a Lendfinity Protocol Governance decision."
 
 #: src/modules/reserve-overview/ReserveConfiguration.tsx
 msgid "This asset is frozen due to a Lendfinity community decision. <0>More details</0>"
@@ -2528,8 +2525,8 @@ msgid "This asset is frozen due to an Aave Protocol Governance decision. On the 
 msgstr "This asset is frozen due to an Aave Protocol Governance decision. On the 20th of December 2022, renFIL will no longer be supported and cannot be bridged back to its native network. It is recommended to withdraw supply positions and repay borrow positions so that renFIL can be bridged back to FIL before the deadline. After this date, it will no longer be possible to convert renFIL to FIL. <0>More details</0>"
 
 #: src/components/Warnings/OffboardingWarning.tsx
-msgid "This asset is planned to be offboarded due to an Aave Protocol Governance decision. <0>More details</0>"
-msgstr "This asset is planned to be offboarded due to an Aave Protocol Governance decision. <0>More details</0>"
+msgid "This asset is planned to be offboarded due to a Lendfinity Protocol Governance decision."
+msgstr "This asset is planned to be offboarded due to a Lendfinity Protocol Governance decision."
 
 #: src/components/infoTooltips/GasTooltip.tsx
 msgid "This gas calculation is only an estimation. Your wallet will set the price of the transaction. You can modify the gas settings directly from your wallet provider."

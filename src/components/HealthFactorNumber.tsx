@@ -22,9 +22,9 @@ export const HealthFactorNumber = ({
 
   const formattedHealthFactor = Number(valueToBigNumber(value).toFixed(2, BigNumber.ROUND_DOWN));
   let healthFactorColor = '';
-  if (formattedHealthFactor >= 3) {
+  if (formattedHealthFactor >= 2) {
     healthFactorColor = palette.success.main;
-  } else if (formattedHealthFactor < 1.1) {
+  } else if (formattedHealthFactor < 1.5) {
     healthFactorColor = palette.error.main;
   } else {
     healthFactorColor = palette.warning.main;
