@@ -6,7 +6,7 @@ import { Trans } from '@lingui/macro';
 import { Box, Checkbox, FormControlLabel, SvgIcon, Typography } from '@mui/material';
 import dayjs from 'dayjs';
 import { formatEther, parseUnits } from 'ethers/lib/utils';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FormattedNumber } from 'src/components/primitives/FormattedNumber';
 import { TokenIcon } from 'src/components/primitives/TokenIcon';
 import { Warning } from 'src/components/primitives/Warning';
@@ -168,7 +168,7 @@ export const StakeCooldownModalContent = ({ stakeAssetName, icon }: StakeCooldow
           {timeMessage(stakeUnstakeWindow)}. You will continue receiving rewards during cooldown and
           unstake window.
         </Trans>{' '}
-        <Link
+        {/* <Link
           onClick={() =>
             trackEvent(GENERAL.EXTERNAL_LINK, {
               assetName: 'ABPT',
@@ -181,7 +181,7 @@ export const StakeCooldownModalContent = ({ stakeAssetName, icon }: StakeCooldow
         >
           <Trans>Learn more</Trans>
         </Link>
-        .
+        . */}
       </Typography>
 
       <Box

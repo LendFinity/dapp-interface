@@ -33,8 +33,8 @@ describe.skip('Switch tabs in header', () => {
 
   it('step4: Switch from Governance to More', () => {
     cy.get('#more-button').click();
-    checkLinkOfButtons('FAQ', 'https://docs.aave.com/faq/governance');
-    checkLinkOfButtons('Developers', 'https://docs.aave.com/portal/');
-    checkLinkOfButtons('Github', 'https://github.com/aave/interface');
+    checkLinkOfButtons('FAQ', 'https://docs.lendfinity.com'); // governance
+    checkLinkOfButtons('Developers', 'https://docs.lendfinity.com'); // portal
+    checkLinkOfButtons('Github', 'https://github.com/LendFinity/dapp-interface'); // interface
   });
 });

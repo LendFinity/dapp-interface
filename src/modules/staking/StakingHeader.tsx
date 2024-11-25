@@ -6,10 +6,7 @@ import { FormattedNumber } from 'src/components/primitives/FormattedNumber';
 import { Row } from 'src/components/primitives/Row';
 import { TextWithTooltip } from 'src/components/TextWithTooltip';
 import { TopInfoPanel } from 'src/components/TopInfoPanel/TopInfoPanel';
-import { useRootStore } from 'src/store/root';
-import { GENERAL } from 'src/utils/mixPanelEvents';
 
-import { Link } from '../../components/primitives/Link';
 import { TopInfoPanelItem } from '../../components/TopInfoPanel/TopInfoPanelItem';
 
 interface StakingHeaderProps {
@@ -28,7 +25,7 @@ export const StakingHeader: React.FC<StakingHeaderProps> = ({ tvl, stkEmission, 
 
   const valueTypographyVariant = downToSM ? 'main16' : 'main21';
   const symbolsTypographyVariant = downToSM ? 'secondary16' : 'secondary21';
-  const trackEvent = useRootStore((store) => store.trackEvent);
+  // const trackEvent = useRootStore((store) => store.trackEvent);
 
   const total = Object.values(tvl || {}).reduce((acc, item) => acc + item, 0);
 
@@ -70,7 +67,7 @@ export const StakingHeader: React.FC<StakingHeaderProps> = ({ tvl, stkEmission, 
               case of a shortfall event, your stake can be slashed to cover the deficit, providing
               an additional layer of protection for the protocol.
             </Trans>{' '}
-            <Link
+            {/* <Link
               href="https://docs.aave.com/faq/migration-and-staking"
               sx={{ textDecoration: 'underline', color: '#8E92A3' }}
               onClick={() =>
@@ -80,7 +77,7 @@ export const StakingHeader: React.FC<StakingHeaderProps> = ({ tvl, stkEmission, 
               }
             >
               <Trans>Learn more about risks involved</Trans>
-            </Link>
+            </Link> */}
           </Typography>
         </Box>
       }

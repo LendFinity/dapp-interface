@@ -1,6 +1,6 @@
 import { InformationCircleIcon } from '@heroicons/react/outline';
 import { Trans } from '@lingui/macro';
-import { Box, Link, SvgIcon, Typography, TypographyProps, useTheme } from '@mui/material';
+import { Box, SvgIcon, Typography, TypographyProps, useTheme } from '@mui/material';
 import { ReactNode } from 'react';
 
 import { ContentWithTooltip } from '../ContentWithTooltip';
@@ -120,12 +120,12 @@ const IsolationModeTooltipTemplate = ({ content }: { content: ReactNode }) => {
     <Box>
       <Box sx={{ mb: 4 }}>{content}</Box>
       <Typography variant="subheader2" color="text.secondary">
-        <Trans>
+        {/* <Trans>
           Learn more in our{' '}
           <Link href="https://docs.aave.com/faq/aave-v3-features#isolation-mode" fontWeight={500}>
             FAQ guide
           </Link>
-        </Trans>
+        </Trans> */}
       </Typography>
     </Box>
   );

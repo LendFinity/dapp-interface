@@ -2,7 +2,6 @@ import { ChainId } from '@aave/contract-helpers';
 import { ExternalLinkIcon } from '@heroicons/react/outline';
 import { Trans } from '@lingui/macro';
 import { Box, Button, SvgIcon, Typography, useMediaQuery, useTheme } from '@mui/material';
-import * as React from 'react';
 import { ChainAvailabilityText } from 'src/components/ChainAvailabilityText';
 import { Link } from 'src/components/primitives/Link';
 import { useRootStore } from 'src/store/root';
@@ -43,7 +42,7 @@ export const GovernanceTopPanel = () => {
   const theme = useTheme();
   const upToLG = useMediaQuery(theme.breakpoints.up('lg'));
   const downToXSM = useMediaQuery(theme.breakpoints.down('xsm'));
-  const trackEvent = useRootStore((store) => store.trackEvent);
+  // const trackEvent = useRootStore((store) => store.trackEvent);
 
   return (
     <TopInfoPanel
@@ -67,14 +66,14 @@ export const GovernanceTopPanel = () => {
               protocol. AAVE token-holders (Ethereum network only) can either vote themselves on new
               proposals or delagate to an address of choice. To learn more check out the Governance
             </Trans>{' '}
-            <Link
+            {/* <Link
               onClick={() => trackEvent(GENERAL.EXTERNAL_LINK, { Link: 'FAQ Docs Governance' })}
               href="https://docs.aave.com/faq/governance"
               sx={{ textDecoration: 'underline', color: '#8E92A3' }}
             >
               <Trans>documentation</Trans>
             </Link>
-            .
+            . */}
           </Typography>
         </Box>
       }
@@ -90,7 +89,7 @@ export const GovernanceTopPanel = () => {
       >
         <ExternalLink text="SNAPSHOTS" href="https://snapshot.org/#/aave.eth" />
         <ExternalLink text="FORUM" href="https://governance.aave.com/" />
-        <ExternalLink text="FAQ" href="https://docs.aave.com/faq/governance" />
+        <ExternalLink text="FAQ" href="https://docs.lendfinity.com" />
         <ExternalLink text="GOVERNANCE V2" href="https://governance-v2.aave.com/" />
       </Box>
     </TopInfoPanel>

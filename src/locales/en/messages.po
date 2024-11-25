@@ -36,8 +36,8 @@ msgid "<0><1><2/></1>Add stkAAVE</0> to see borrow rate with discount"
 msgstr "<0><1><2/></1>Add stkAAVE</0> to see borrow rate with discount"
 
 #: src/components/Warnings/AMPLWarning.tsx
-msgid "<0>Ampleforth</0> is a rebasing asset. Visit the <1>documentation</1> to learn more."
-msgstr "<0>Ampleforth</0> is a rebasing asset. Visit the <1>documentation</1> to learn more."
+msgid "<0>Ampleforth</0> is a rebasing asset."
+msgstr "<0>Ampleforth</0> is a rebasing asset."
 
 #: src/components/transactions/Borrow/ParameterChangewarning.tsx
 msgid "<0>Attention:</0> Parameter changes via governance can alter your account health factor and risk of liquidation."
@@ -708,12 +708,9 @@ msgid "Collateral usage is limited because of Isolation mode."
 msgstr "Collateral usage is limited because of Isolation mode."
 
 #: src/components/isolationMode/IsolatedBadge.tsx
+#: src/modules/dashboard/lists/SupplyAssetsList/SupplyAssetsList.tsx
 msgid "Collateral usage is limited because of isolation mode."
 msgstr "Collateral usage is limited because of isolation mode."
-
-#: src/modules/dashboard/lists/SupplyAssetsList/SupplyAssetsList.tsx
-msgid "Collateral usage is limited because of isolation mode. <0>Learn More</0>"
-msgstr "Collateral usage is limited because of isolation mode. <0>Learn More</0>"
 
 #: src/components/transactions/FlowCommons/TxModalDetails.tsx
 #: src/components/transactions/Swap/SwapModalDetails.tsx
@@ -953,16 +950,16 @@ msgid "E-Mode category"
 msgstr "E-Mode category"
 
 #: src/modules/dashboard/DashboardEModeButton.tsx
-msgid "E-Mode increases your LTV for a selected category of assets up to 97%. <0>Learn more</0>"
-msgstr "E-Mode increases your LTV for a selected category of assets up to 97%. <0>Learn more</0>"
+msgid "E-Mode increases your LTV for a selected category of assets up to 97%."
+msgstr "E-Mode increases your LTV for a selected category of assets up to 97%."
 
 #: src/components/infoTooltips/EModeTooltip.tsx
-msgid "E-Mode increases your LTV for a selected category of assets up to<0/>. <1>Learn more</1>"
-msgstr "E-Mode increases your LTV for a selected category of assets up to<0/>. <1>Learn more</1>"
+msgid "E-Mode increases your LTV for a selected category of assets up to<0/>."
+msgstr "E-Mode increases your LTV for a selected category of assets up to<0/>."
 
 #: src/modules/reserve-overview/ReserveEModePanel.tsx
-msgid "E-Mode increases your LTV for a selected category of assets, meaning that when E-mode is enabled, you will have higher borrowing power over assets of the same E-mode category which are defined by Lendfinity Governance. You can enter E-Mode from your <0>Dashboard</0>. To learn more about E-Mode and applied restrictions in <1>FAQ</1> or <2>Aave V3 Technical Paper</2>."
-msgstr "E-Mode increases your LTV for a selected category of assets, meaning that when E-mode is enabled, you will have higher borrowing power over assets of the same E-mode category which are defined by Lendfinity Governance. You can enter E-Mode from your <0>Dashboard</0>. To learn more about E-Mode and applied restrictions in <1>FAQ</1> or <2>Aave V3 Technical Paper</2>."
+msgid "E-Mode increases your LTV for a selected category of assets, meaning that when E-mode is enabled, you will have higher borrowing power over assets of the same E-mode category which are defined by Lendfinity Governance. You can enter E-Mode from your <0>Dashboard</0>"
+msgstr "E-Mode increases your LTV for a selected category of assets, meaning that when E-mode is enabled, you will have higher borrowing power over assets of the same E-mode category which are defined by Lendfinity Governance. You can enter E-Mode from your <0>Dashboard</0>"
 
 #: src/modules/governance/RepresentativesInfoPanel.tsx
 msgid "Edit"
@@ -1007,8 +1004,8 @@ msgid "Enabling E-Mode"
 msgstr "Enabling E-Mode"
 
 #: src/components/transactions/Emode/EmodeModalContent.tsx
-msgid "Enabling E-Mode only allows you to borrow assets belonging to the selected category. Please visit our <0>FAQ guide</0> to learn more about how it works and the applied restrictions."
-msgstr "Enabling E-Mode only allows you to borrow assets belonging to the selected category. Please visit our <0>FAQ guide</0> to learn more about how it works and the applied restrictions."
+msgid "Enabling E-Mode only allows you to borrow assets belonging to the selected category."
+msgstr "Enabling E-Mode only allows you to borrow assets belonging to the selected category."
 
 #: src/components/transactions/CollateralChange/CollateralChangeModalContent.tsx
 msgid "Enabling this asset as collateral increases your borrowing power and Health Factor. However, it can get liquidated if your health factor drops below 1."
@@ -1221,8 +1218,8 @@ msgid "In E-Mode some assets are not borrowable. Exit E-Mode to get access to al
 msgstr "In E-Mode some assets are not borrowable. Exit E-Mode to get access to all assets"
 
 #: src/components/transactions/Warnings/IsolationModeWarning.tsx
-msgid "In Isolation mode, you cannot supply other assets as collateral. A global debt ceiling limits the borrowing power of the isolated asset. To exit isolation mode disable {0} as collateral before borrowing another asset. Read more in our <0>FAQ</0>"
-msgstr "In Isolation mode, you cannot supply other assets as collateral. A global debt ceiling limits the borrowing power of the isolated asset. To exit isolation mode disable {0} as collateral before borrowing another asset. Read more in our <0>FAQ</0>"
+msgid "In Isolation mode, you cannot supply other assets as collateral. A global debt ceiling limits the borrowing power of the isolated asset. To exit isolation mode disable {0} as collateral before borrowing another asset."
+msgstr "In Isolation mode, you cannot supply other assets as collateral. A global debt ceiling limits the borrowing power of the isolated asset. To exit isolation mode disable {0} as collateral before borrowing another asset."
 
 #: src/ui-config/errorMapping.tsx
 msgid "Inconsistent flashloan parameters"
@@ -1296,34 +1293,10 @@ msgstr "Join the community discussion"
 msgid "Language"
 msgstr "Language"
 
-#: src/components/caps/DebtCeilingStatus.tsx
-#: src/components/incentives/GhoIncentivesCard.tsx
-#: src/components/infoTooltips/BorrowCapMaxedTooltip.tsx
-#: src/components/infoTooltips/DebtCeilingMaxedTooltip.tsx
-#: src/components/infoTooltips/SupplyCapMaxedTooltip.tsx
-#: src/components/transactions/StakeCooldown/StakeCooldownModalContent.tsx
-#: src/components/transactions/Warnings/BorrowCapWarning.tsx
-#: src/components/transactions/Warnings/DebtCeilingWarning.tsx
 #: src/components/transactions/Warnings/MarketWarning.tsx
-#: src/components/transactions/Warnings/SupplyCapWarning.tsx
-#: src/modules/dashboard/LiquidationRiskParametresModal/LiquidationRiskParametresModal.tsx
-#: src/modules/reserve-overview/BorrowInfo.tsx
-#: src/modules/reserve-overview/SupplyInfo.tsx
 #: src/modules/reserve-overview/SupplyInfo.tsx
 msgid "Learn more"
 msgstr "Learn more"
-
-#: src/modules/staking/StakingHeader.tsx
-msgid "Learn more about risks involved"
-msgstr "Learn more about risks involved"
-
-#: src/components/isolationMode/IsolatedBadge.tsx
-msgid "Learn more in our <0>FAQ guide</0>"
-msgstr "Learn more in our <0>FAQ guide</0>"
-
-#: src/modules/governance/DelegatedInfoPanel.tsx
-msgid "Learn more."
-msgstr "Learn more."
 
 #: src/modules/reserve-overview/TokenLinkDropdown.tsx
 msgid "Lendfinity debt token"
@@ -1677,6 +1650,10 @@ msgstr "Notify"
 #: src/components/transactions/FlowCommons/BaseSuccess.tsx
 msgid "Ok, Close"
 msgstr "Ok, Close"
+
+#: src/layouts/AppFooter.tsx
+msgid "OpenChat"
+msgstr "OpenChat"
 
 #: src/ui-config/errorMapping.tsx
 msgid "Operation not supported"
@@ -2438,8 +2415,8 @@ msgid "The collateral chosen cannot be liquidated"
 msgstr "The collateral chosen cannot be liquidated"
 
 #: src/components/Warnings/CooldownWarning.tsx
-msgid "The cooldown period is the time required prior to unstaking your tokens (20 days). You can only withdraw your assets from the Security Module after the cooldown period and within the unstake window.<0>Learn more</0>"
-msgstr "The cooldown period is the time required prior to unstaking your tokens (20 days). You can only withdraw your assets from the Security Module after the cooldown period and within the unstake window.<0>Learn more</0>"
+msgid "The cooldown period is the time required prior to unstaking your tokens (20 days). You can only withdraw your assets from the Security Module after the cooldown period and within the unstake window."
+msgstr "The cooldown period is the time required prior to unstaking your tokens (20 days). You can only withdraw your assets from the Security Module after the cooldown period and within the unstake window."
 
 #: src/components/transactions/StakeCooldown/StakeCooldownModalContent.tsx
 msgid "The cooldown period is {0}. After {1} of cooldown, you will enter unstake window of {2}. You will continue receiving rewards during cooldown and unstake window."
@@ -2515,8 +2492,8 @@ msgid "This action will reduce your health factor. Please be mindful of the incr
 msgstr "This action will reduce your health factor. Please be mindful of the increased risk of collateral liquidation."
 
 #: src/components/AddressBlockedModal.tsx
-msgid "This address is blocked on app.aave.com because it is associated with one or more"
-msgstr "This address is blocked on app.aave.com because it is associated with one or more"
+msgid "This address is blocked because it is associated with one or more blocked activities"
+msgstr "This address is blocked because it is associated with one or more blocked activities"
 
 #: src/components/caps/CapsTooltip.tsx
 msgid "This asset has almost reached its borrow cap. There is only {messageValue} available to be borrowed from this market."
@@ -2616,8 +2593,8 @@ msgid "To request access for this permissioned market, please visit: <0>Acces Pr
 msgstr "To request access for this permissioned market, please visit: <0>Acces Provider Name</0>"
 
 #: src/modules/governance/VotingPowerInfoPanel.tsx
-msgid "To submit a proposal for minor changes to the protocol, you'll need at least 80.00K power. If you want to change the core code base, you'll need 320k power.<0>Learn more.</0>"
-msgstr "To submit a proposal for minor changes to the protocol, you'll need at least 80.00K power. If you want to change the core code base, you'll need 320k power.<0>Learn more.</0>"
+msgid "To submit a proposal for minor changes to the protocol, you'll need at least 80.00K power. If you want to change the core code base, you'll need 320k power."
+msgstr "To submit a proposal for minor changes to the protocol, you'll need at least 80.00K power. If you want to change the core code base, you'll need 320k power."
 
 #: src/modules/governance/proposal/VotersListContainer.tsx
 msgid "Top 10 addresses"
@@ -2947,8 +2924,8 @@ msgid "With a voting power of <0/>"
 msgstr "With a voting power of <0/>"
 
 #: src/modules/faucet/FaucetTopPanel.tsx
-msgid "With testnet Faucet you can get free assets to test the Lendfinity Protocol. Make sure to switch your wallet provider to the appropriate testnet network, select desired asset, and click ‘Faucet’ to get tokens transferred to your wallet. The assets on a testnet are not “real,” meaning they have no monetary value. <0>Learn more</0>"
-msgstr "With testnet Faucet you can get free assets to test the Lendfinity Protocol. Make sure to switch your wallet provider to the appropriate testnet network, select desired asset, and click ‘Faucet’ to get tokens transferred to your wallet. The assets on a testnet are not “real,” meaning they have no monetary value. <0>Learn more</0>"
+msgid "With testnet Faucet you can get free assets to test the Lendfinity Protocol. Make sure to switch your wallet provider to the appropriate testnet network, select desired asset, and click ‘Faucet’ to get tokens transferred to your wallet. The assets on a testnet are not “real,” meaning they have no monetary value."
+msgstr "With testnet Faucet you can get free assets to test the Lendfinity Protocol. Make sure to switch your wallet provider to the appropriate testnet network, select desired asset, and click ‘Faucet’ to get tokens transferred to your wallet. The assets on a testnet are not “real,” meaning they have no monetary value."
 
 #: src/components/transactions/Withdraw/WithdrawAndSwitchModalContent.tsx
 #: src/components/transactions/Withdraw/WithdrawAndUnwrapActions.tsx
@@ -3176,10 +3153,6 @@ msgstr "Zero address not valid"
 msgid "assets"
 msgstr "assets"
 
-#: src/components/AddressBlockedModal.tsx
-msgid "blocked activities"
-msgstr "blocked activities"
-
 #: src/components/transactions/FlowCommons/GasEstimationError.tsx
 msgid "copy the error"
 msgstr "copy the error"
@@ -3187,10 +3160,6 @@ msgstr "copy the error"
 #: src/modules/history/actions/ActionDetails.tsx
 msgid "disabled"
 msgstr "disabled"
-
-#: src/modules/governance/GovernanceTopPanel.tsx
-msgid "documentation"
-msgstr "documentation"
 
 #: src/modules/history/actions/ActionDetails.tsx
 msgid "enabled"

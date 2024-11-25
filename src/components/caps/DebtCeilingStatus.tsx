@@ -8,7 +8,6 @@ import LinearProgress, {
 import { AssetCapHookData } from 'src/hooks/useAssetCaps';
 
 import { FormattedNumber } from '../primitives/FormattedNumber';
-import { Link } from '../primitives/Link';
 import { TextWithTooltip } from '../TextWithTooltip';
 
 type DebtCeilingTooltipProps = {
@@ -59,12 +58,12 @@ export const DebtCeilingStatus = ({
                 Debt ceiling limits the amount possible to borrow against this asset by protocol
                 users. Debt ceiling is specific to assets in isolation mode and is denoted in USD.
               </Trans>{' '}
-              <Link
+              {/* <Link
                 href="https://docs.aave.com/faq/aave-v3-features#how-does-isolation-mode-affect-my-borrowing-power"
                 underline="always"
               >
                 <Trans>Learn more</Trans>
-              </Link>
+              </Link> */}
             </>
           </TextWithTooltip>
         </Box>

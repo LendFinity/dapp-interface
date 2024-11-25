@@ -3,7 +3,6 @@ import { Trans } from '@lingui/macro';
 import { Box, Typography } from '@mui/material';
 
 import { FormattedNumber } from '../primitives/FormattedNumber';
-import { Link } from '../primitives/Link';
 import { Row } from '../primitives/Row';
 import { TokenIcon } from '../primitives/TokenIcon';
 
@@ -31,14 +30,14 @@ export const MeritIncentivesTooltipContent = ({
           This is a program initiated and implemented by the decentralised Aave community. Aave Labs
           does not guarantee the program and accepts no liability.
         </Trans>{' '}
-        <Link
+        {/* <Link
           href="https://governance.aave.com/t/arfc-merit-a-new-aave-alignment-user-reward-system/16646"
           sx={{ textDecoration: 'underline' }}
           variant="caption"
           color="text.secondary"
         >
           Learn more
-        </Link>
+        </Link> */}
       </Typography>
 
       <Box sx={{ width: '100%' }}>

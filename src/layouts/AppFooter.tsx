@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro';
-import { GitHub, Telegram, X } from '@mui/icons-material';
+import { GitHub, Telegram, X, YouTube } from '@mui/icons-material';
 import { Box, styled, SvgIcon, Typography } from '@mui/material';
 import MediumIcon from 'public/icons/medium.svg';
 import { Link } from 'src/components/primitives/Link';
@@ -29,14 +29,19 @@ const FOOTER_ICONS = [
     title: 'X',
   },
   {
-    href: 'https://medium.com/@lendfinity.xyz',
-    icon: <MediumIcon />,
-    title: 'Medium',
-  },
-  {
     href: 'https://github.com/LendFinity',
     icon: <GitHub />,
     title: 'Github',
+  },
+  {
+    href: 'https://www.youtube.com/watch?v=7fvtINvTelI',
+    icon: <YouTube />,
+    title: 'YouTube',
+  },
+  {
+    href: 'https://medium.com/@lendfinity.xyz',
+    icon: <MediumIcon />,
+    title: 'Medium',
   },
 ];
 
@@ -95,6 +100,11 @@ export function AppFooter() {
       href: 'https://docs.lendfinity.xyz',
       label: <Trans>Docs</Trans>,
       key: 'Docs',
+    },
+    {
+      href: 'https://oc.app/community/x2pwb-5qaaa-aaaaf-bn3vq-cai/channel/1840340961',
+      label: <Trans>OpenChat</Trans>,
+      key: 'OpenChat',
     },
     //   {
     //     href: 'https://docs.aave.com/faq/',

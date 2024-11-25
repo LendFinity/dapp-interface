@@ -9,7 +9,7 @@ import { ReserveOverviewBox } from 'src/components/ReserveOverviewBox';
 import { getEmodeMessage } from 'src/components/transactions/Emode/EmodeNaming';
 import { ComputedReserveData } from 'src/hooks/app-data-provider/useAppDataProvider';
 import { useRootStore } from 'src/store/root';
-import { GENERAL, RESERVE_DETAILS } from 'src/utils/mixPanelEvents';
+import { RESERVE_DETAILS } from 'src/utils/mixPanelEvents';
 
 import LightningBoltGradient from '/public/lightningBoltGradient.svg';
 
@@ -100,7 +100,7 @@ export const ReserveEModePanel: React.FC<ReserverEModePanelProps> = ({ reserve }
             >
               Dashboard
             </Link>
-            . To learn more about E-Mode and applied restrictions in{' '}
+            {/* . To learn more about E-Mode and applied restrictions in{' '}
             <Link
               href="https://docs.aave.com/faq/aave-v3-features#high-efficiency-mode-e-mode"
               sx={{ textDecoration: 'underline' }}
@@ -124,7 +124,7 @@ export const ReserveEModePanel: React.FC<ReserverEModePanelProps> = ({ reserve }
             >
               Aave V3 Technical Paper
             </Link>
-            .
+            . */}
           </Trans>
         </Typography>
       </Box>

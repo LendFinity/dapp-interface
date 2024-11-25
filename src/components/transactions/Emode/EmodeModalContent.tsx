@@ -1,7 +1,7 @@
 import { formatUserSummary } from '@aave/math-utils';
 import { ArrowNarrowRightIcon } from '@heroicons/react/solid';
 import { Trans } from '@lingui/macro';
-import { Box, Link, SvgIcon, Typography } from '@mui/material';
+import { Box, SvgIcon, Typography } from '@mui/material';
 import { useState } from 'react';
 import { FormattedNumber } from 'src/components/primitives/FormattedNumber';
 import { Row } from 'src/components/primitives/Row';
@@ -190,7 +190,7 @@ export const EmodeModalContent = ({
           <Typography variant="caption">
             <Trans>
               Enabling E-Mode only allows you to borrow assets belonging to the selected category.
-              Please visit our{' '}
+              {/* Please visit our{' '}
               <Link
                 href="https://docs.aave.com/faq/aave-v3-features#high-efficiency-mode-e-mode"
                 target="_blank"
@@ -198,7 +198,7 @@ export const EmodeModalContent = ({
               >
                 FAQ guide
               </Link>{' '}
-              to learn more about how it works and the applied restrictions.
+              to learn more about how it works and the applied restrictions. */}
             </Trans>
           </Typography>
         </Warning>

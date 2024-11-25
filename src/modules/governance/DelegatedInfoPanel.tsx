@@ -4,7 +4,6 @@ import { Box } from '@mui/system';
 import { constants } from 'ethers';
 import { AvatarSize } from 'src/components/Avatar';
 import { FormattedNumber } from 'src/components/primitives/FormattedNumber';
-import { Link } from 'src/components/primitives/Link';
 import { Row } from 'src/components/primitives/Row';
 import { TokenIcon } from 'src/components/primitives/TokenIcon';
 import { ExternalUserDisplay } from 'src/components/UserDisplay';
@@ -13,7 +12,6 @@ import { usePowers } from 'src/hooks/governance/usePowers';
 import { useModalContext } from 'src/hooks/useModal';
 import { ZERO_ADDRESS } from 'src/modules/governance/utils/formatProposal';
 import { useRootStore } from 'src/store/root';
-import { GENERAL } from 'src/utils/mixPanelEvents';
 
 type DelegatedPowerProps = {
   aavePower: string;
@@ -137,7 +135,7 @@ export const DelegatedInfoPanel = () => {
   } = useGovernanceTokens();
   const { data: powers } = usePowers();
   const { openGovDelegation, openRevokeGovDelegation } = useModalContext();
-  const trackEvent = useRootStore((store) => store.trackEvent);
+  // const trackEvent = useRootStore((store) => store.trackEvent);
 
   if (!powers || !address) return null;
 
@@ -172,7 +170,7 @@ export const DelegatedInfoPanel = () => {
             You will not be sending any tokens, only the rights to vote and propose changes to the
             protocol. You can re-delegate or revoke power to self at any time.
           </Trans>
-          <Link
+          {/* <Link
             href="https://docs.aave.com/developers/v/2.0/protocol-governance/governance"
             target="_blank"
             variant="description"
@@ -181,7 +179,7 @@ export const DelegatedInfoPanel = () => {
             onClick={() => trackEvent(GENERAL.EXTERNAL_LINK, { link: 'Learn More Delegation' })}
           >
             <Trans>Learn more.</Trans>
-          </Link>
+          </Link> */}
         </Typography>
         {disableButton ? (
           <Typography variant="description" color="text.muted" mt={6}>

@@ -5,7 +5,6 @@ import { useAppDataContext } from 'src/hooks/app-data-provider/useAppDataProvide
 import { PopperComponent } from '../ContentWithTooltip';
 import GhoBorrowApyRange from '../GhoBorrowApyRange';
 import { FormattedNumber } from '../primitives/FormattedNumber';
-import { Link } from '../primitives/Link';
 import { NoData } from '../primitives/NoData';
 import { TokenIcon } from '../primitives/TokenIcon';
 
@@ -27,10 +26,10 @@ export const GhoIncentivesCard = ({
   value,
   useApyRange,
   rangeValues = [0, 0],
-  ghoRoute,
+  // ghoRoute,
   stkAaveBalance,
   userQualifiesForDiscount,
-  onMoreDetailsClick,
+  // onMoreDetailsClick,
   withTokenIcon = false,
   forceShowTooltip = false,
   variant = 'secondary14',
@@ -69,14 +68,14 @@ export const GhoIncentivesCard = ({
             ) : null}
             AAVE in Safety Module.
           </Trans>{' '}
-          <Link
+          {/* <Link
             onClick={onMoreDetailsClick}
             href={ghoRoute}
             underline="always"
             variant="subheader2"
           >
             <Trans>Learn more</Trans>
-          </Link>
+          </Link> */}
         </Typography>
       </Box>
     );
