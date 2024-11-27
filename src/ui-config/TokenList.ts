@@ -87,7 +87,7 @@ const NETWORK_ASSETS: TokenInfo[] = [
   },
   {
     name: 'Bitfinity',
-    symbol: 'BTF',
+    symbol: 'BFT',
     decimals: 18,
     address: API_ETH_MOCK_ADDRESS,
     chainId: 355113,
@@ -98,7 +98,7 @@ const NETWORK_ASSETS: TokenInfo[] = [
   },
   {
     name: 'Bitfinity',
-    symbol: 'BTF',
+    symbol: 'BFT',
     decimals: 18,
     address: API_ETH_MOCK_ADDRESS,
     chainId: 355110,

@@ -57,8 +57,8 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
   355110: {
     name: 'Bitfinity',
     publicJsonRPCUrl: ['https://mainnet.bitfinity.network'],
-    baseAssetSymbol: 'BTF',
-    wrappedBaseAssetSymbol: 'WBTF',
+    baseAssetSymbol: 'BFT',
+    wrappedBaseAssetSymbol: 'WBFT',
     baseAssetDecimals: 18,
     explorerLink: 'https://explorer.mainnet.bitfinity.network/',
     networkLogoPath: '/icons/networks/bitfinity.svg',
@@ -66,8 +66,8 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
   355113: {
     name: 'Bitfinity Testnet',
     publicJsonRPCUrl: ['https://testnet.bitfinity.network'],
-    baseAssetSymbol: 'BTF',
-    wrappedBaseAssetSymbol: 'WBTF',
+    baseAssetSymbol: 'BFT',
+    wrappedBaseAssetSymbol: 'WBFT',
     baseAssetDecimals: 18,
     explorerLink: 'https://explorer.testnet.bitfinity.network/',
     isTestnet: true,
