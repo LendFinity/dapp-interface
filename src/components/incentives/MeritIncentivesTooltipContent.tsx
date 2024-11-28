@@ -27,8 +27,7 @@ export const MeritIncentivesTooltipContent = ({
 
       <Typography variant="caption" color="text.secondary" mb={3}>
         <Trans>
-          This is a program initiated and implemented by the decentralised Aave community. Aave Labs
-          does not guarantee the program and accepts no liability.
+          This is a program initiated and implemented by the decentralised Lendfinity community.
         </Trans>{' '}
         {/* <Link
           href="https://governance.aave.com/t/arfc-merit-a-new-aave-alignment-user-reward-system/16646"

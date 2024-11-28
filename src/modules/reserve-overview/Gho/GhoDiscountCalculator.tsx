@@ -395,7 +395,7 @@ const GhoDiscountParametersComponent: React.FC<{
           />
         </DiscountModelParameter>
         <DiscountModelParameter
-          title={<Trans>Minimum staked Aave amount</Trans>}
+          title={<Trans>Minimum staked Lend amount</Trans>}
           fullWidth={downToXsm}
           loading={loading}
         >

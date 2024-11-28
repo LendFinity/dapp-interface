@@ -112,22 +112,6 @@ msgstr "APY, variable"
 msgid "AToken supply is not zero"
 msgstr "AToken supply is not zero"
 
-#: src/modules/governance/GovernanceTopPanel.tsx
-msgid "Aave Governance"
-msgstr "Aave Governance"
-
-#: src/modules/reserve-overview/AddTokenDropdown.tsx
-msgid "Aave aToken"
-msgstr "Aave aToken"
-
-#: src/modules/governance/GovernanceTopPanel.tsx
-msgid "Aave is a fully decentralized, community governed protocol by the AAVE token-holders. AAVE token-holders collectively discuss, propose, and vote on upgrades to the protocol. AAVE token-holders (Ethereum network only) can either vote themselves on new proposals or delagate to an address of choice. To learn more check out the Governance"
-msgstr "Aave is a fully decentralized, community governed protocol by the AAVE token-holders. AAVE token-holders collectively discuss, propose, and vote on upgrades to the protocol. AAVE token-holders (Ethereum network only) can either vote themselves on new proposals or delagate to an address of choice. To learn more check out the Governance"
-
-#: src/modules/staking/StakingPanel.tsx
-msgid "Aave per month"
-msgstr "Aave per month"
-
 #: src/modules/reserve-overview/Gho/GhoReserveConfiguration.tsx
 msgid "About GHO"
 msgstr "About GHO"
@@ -644,8 +628,8 @@ msgid "Claim {symbol}"
 msgstr "Claim {symbol}"
 
 #: src/modules/staking/StakingPanel.tsx
-msgid "Claimable AAVE"
-msgstr "Claimable AAVE"
+msgid "Claimable LEND"
+msgstr "Claimable LEND"
 
 #: src/components/transactions/ClaimRewards/ClaimRewardsModalContent.tsx
 #: src/components/transactions/StakeRewardClaim/StakeRewardClaimModalContent.tsx
@@ -919,8 +903,8 @@ msgstr "Download"
 
 #: src/components/transactions/Repay/CollateralRepayModalContent.tsx
 #: src/components/transactions/Swap/SwapModalContent.tsx
-msgid "Due to health factor impact, a flashloan is required to perform this transaction, but Aave Governance has disabled flashloan availability for this asset. Try lowering the amount or supplying additional collateral."
-msgstr "Due to health factor impact, a flashloan is required to perform this transaction, but Aave Governance has disabled flashloan availability for this asset. Try lowering the amount or supplying additional collateral."
+msgid "Due to health factor impact, a flashloan is required to perform this transaction, but Lendfinity Governance has disabled flashloan availability for this asset. Try lowering the amount or supplying additional collateral."
+msgstr "Due to health factor impact, a flashloan is required to perform this transaction, but Lendfinity Governance has disabled flashloan availability for this asset. Try lowering the amount or supplying additional collateral."
 
 #: src/components/Warnings/StETHCollateralWarning.tsx
 msgid "Due to internal stETH mechanics required for rebasing support, it is not possible to perform a collateral switch where stETH is the source token."
@@ -1235,8 +1219,8 @@ msgid "Interest rate strategy"
 msgstr "Interest rate strategy"
 
 #: src/components/infoTooltips/FixedAPYTooltip.tsx
-msgid "Interest rate that is determined by Aave Governance. This rate may be changed over time depending on the need for the GHO supply to contract/expand. <0>Learn more</0>"
-msgstr "Interest rate that is determined by Aave Governance. This rate may be changed over time depending on the need for the GHO supply to contract/expand. <0>Learn more</0>"
+msgid "Interest rate that is determined by Lendfinity Governance. This rate may be changed over time depending on the need for the GHO supply to contract/expand. <0>Learn more</0>"
+msgstr "Interest rate that is determined by Lendfinity Governance. This rate may be changed over time depending on the need for the GHO supply to contract/expand. <0>Learn more</0>"
 
 #: src/ui-config/errorMapping.tsx
 msgid "Invalid amount to burn"
@@ -1295,10 +1279,23 @@ msgstr "Language"
 msgid "Learn more"
 msgstr "Learn more"
 
+#: src/modules/staking/StakingPanel.tsx
+msgid "Lend per month"
+msgstr "Lend per month"
+
+#: src/modules/governance/GovernanceTopPanel.tsx
+msgid "Lendfinity Governance"
+msgstr "Lendfinity Governance"
+
 #: src/modules/reserve-overview/TokenLinkDropdown.tsx
 msgid "Lendfinity debt token"
 msgstr "Lendfinity debt token"
 
+#: src/modules/governance/GovernanceTopPanel.tsx
+msgid "Lendfinity is a fully decentralized, community governed protocol by the LEND token-holders. LEND token-holders collectively discuss, propose, and vote on upgrades to the protocol. LEND token-holders (Ethereum network only) can either vote themselves on new proposals or delagate to an address of choice. To learn more check out the Governance"
+msgstr "Lendfinity is a fully decentralized, community governed protocol by the LEND token-holders. LEND token-holders collectively discuss, propose, and vote on upgrades to the protocol. LEND token-holders (Ethereum network only) can either vote themselves on new proposals or delagate to an address of choice. To learn more check out the Governance"
+
+#: src/modules/reserve-overview/AddTokenDropdown.tsx
 #: src/modules/reserve-overview/TokenLinkDropdown.tsx
 msgid "Lendfinity lToken"
 msgstr "Lendfinity lToken"
@@ -1521,8 +1518,8 @@ msgid "Minimum amount received"
 msgstr "Minimum amount received"
 
 #: src/modules/reserve-overview/Gho/GhoDiscountCalculator.tsx
-msgid "Minimum staked Aave amount"
-msgstr "Minimum staked Aave amount"
+msgid "Minimum staked Lend amount"
+msgstr "Minimum staked Lend amount"
 
 #: src/components/transactions/Switch/SwitchModalContent.tsx
 msgid "Minimum {0} received"
@@ -1825,8 +1822,8 @@ msgid "Read more here."
 msgstr "Read more here."
 
 #: src/components/infoTooltips/ReadOnlyModeTooltip.tsx
-msgid "Read-only mode allows to see address positions in Aave, but you won't be able to perform transactions."
-msgstr "Read-only mode allows to see address positions in Aave, but you won't be able to perform transactions."
+msgid "Read-only mode allows to see address positions in Lendfinity, but you won't be able to perform transactions."
+msgstr "Read-only mode allows to see address positions in Lendfinity, but you won't be able to perform transactions."
 
 #: src/layouts/WalletWidget.tsx
 msgid "Read-only mode."
@@ -1928,8 +1925,8 @@ msgid "Reserve factor"
 msgstr "Reserve factor"
 
 #: src/components/infoTooltips/ReserveFactorTooltip.tsx
-msgid "Reserve factor is a percentage of interest which goes to a {0} that is controlled by Aave governance to promote ecosystem growth."
-msgstr "Reserve factor is a percentage of interest which goes to a {0} that is controlled by Aave governance to promote ecosystem growth."
+msgid "Reserve factor is a percentage of interest which goes to a {0} that is controlled by Lendfinity governance to promote ecosystem growth."
+msgstr "Reserve factor is a percentage of interest which goes to a {0} that is controlled by Lendfinity governance to promote ecosystem growth."
 
 #: src/modules/reserve-overview/ReserveConfigurationWrapper.tsx
 msgid "Reserve status & configuration"
@@ -2371,8 +2368,8 @@ msgid "The Aave Balancer Pool Token (ABPT) is a liquidity pool token. You can re
 msgstr "The Aave Balancer Pool Token (ABPT) is a liquidity pool token. You can receive ABPT by depositing a combination of AAVE + wstETH in the Balancer liquidity pool. You can then stake your BPT in the Safety Module to secure the protocol and earn Safety Incentives."
 
 #: src/modules/reserve-overview/Gho/GhoReserveTopDetails.tsx
-msgid "The Aave Protocol is programmed to always use the price of 1 GHO = $1. This is different from using market pricing via oracles for other crypto assets. This creates stabilizing arbitrage opportunities when the price of GHO fluctuates."
-msgstr "The Aave Protocol is programmed to always use the price of 1 GHO = $1. This is different from using market pricing via oracles for other crypto assets. This creates stabilizing arbitrage opportunities when the price of GHO fluctuates."
+msgid "The Lendfinity Protocol is programmed to always use the price of 1 GHO = $1. This is different from using market pricing via oracles for other crypto assets. This creates stabilizing arbitrage opportunities when the price of GHO fluctuates."
+msgstr "The Lendfinity Protocol is programmed to always use the price of 1 GHO = $1. This is different from using market pricing via oracles for other crypto assets. This creates stabilizing arbitrage opportunities when the price of GHO fluctuates."
 
 #: src/components/infoTooltips/MaxLTVTooltip.tsx
 msgid "The Maximum LTV ratio represents the maximum borrowing power of a specific collateral. For example, if a collateral has an LTV of 75%, the user can borrow up to 0.75 worth of ETH in the principal currency for every 1 ETH worth of collateral."
@@ -2516,13 +2513,13 @@ msgstr "This asset has reached its supply cap. Nothing is available to be suppli
 msgid "This asset is frozen due to a Lendfinity Protocol Governance decision."
 msgstr "This asset is frozen due to a Lendfinity Protocol Governance decision."
 
+#: src/components/infoTooltips/RenFILToolTip.tsx
+msgid "This asset is frozen due to a Lendfinity Protocol Governance decision. On the 20th of December 2022, renFIL will no longer be supported and cannot be bridged back to its native network. It is recommended to withdraw supply positions and repay borrow positions so that renFIL can be bridged back to FIL before the deadline. After this date, it will no longer be possible to convert renFIL to FIL. <0>More details</0>"
+msgstr "This asset is frozen due to a Lendfinity Protocol Governance decision. On the 20th of December 2022, renFIL will no longer be supported and cannot be bridged back to its native network. It is recommended to withdraw supply positions and repay borrow positions so that renFIL can be bridged back to FIL before the deadline. After this date, it will no longer be possible to convert renFIL to FIL. <0>More details</0>"
+
 #: src/modules/reserve-overview/ReserveConfiguration.tsx
 msgid "This asset is frozen due to a Lendfinity community decision."
 msgstr "This asset is frozen due to a Lendfinity community decision."
-
-#: src/components/infoTooltips/RenFILToolTip.tsx
-msgid "This asset is frozen due to an Aave Protocol Governance decision. On the 20th of December 2022, renFIL will no longer be supported and cannot be bridged back to its native network. It is recommended to withdraw supply positions and repay borrow positions so that renFIL can be bridged back to FIL before the deadline. After this date, it will no longer be possible to convert renFIL to FIL. <0>More details</0>"
-msgstr "This asset is frozen due to an Aave Protocol Governance decision. On the 20th of December 2022, renFIL will no longer be supported and cannot be bridged back to its native network. It is recommended to withdraw supply positions and repay borrow positions so that renFIL can be bridged back to FIL before the deadline. After this date, it will no longer be possible to convert renFIL to FIL. <0>More details</0>"
 
 #: src/components/Warnings/OffboardingWarning.tsx
 msgid "This asset is planned to be offboarded due to a Lendfinity Protocol Governance decision."
@@ -2537,8 +2534,8 @@ msgid "This integration was<0>proposed and approved</0>by the community."
 msgstr "This integration was<0>proposed and approved</0>by the community."
 
 #: src/components/incentives/MeritIncentivesTooltipContent.tsx
-msgid "This is a program initiated and implemented by the decentralised Aave community. Aave Labs does not guarantee the program and accepts no liability."
-msgstr "This is a program initiated and implemented by the decentralised Aave community. Aave Labs does not guarantee the program and accepts no liability."
+msgid "This is a program initiated and implemented by the decentralised Lendfinity community."
+msgstr "This is a program initiated and implemented by the decentralised Lendfinity community."
 
 #: src/components/infoTooltips/AvailableTooltip.tsx
 msgid "This is the total amount available for you to borrow. You can borrow based on your collateral and until the borrow cap is reached."
@@ -2574,8 +2571,8 @@ msgid "To borrow you need to supply any asset to be used as collateral."
 msgstr "To borrow you need to supply any asset to be used as collateral."
 
 #: src/components/infoTooltips/ApprovalTooltip.tsx
-msgid "To continue, you need to grant Aave smart contracts permission to move your funds from your wallet. Depending on the asset and wallet you use, it is done by signing the permission message (gas free), or by submitting an approval transaction (requires gas). <0>Learn more</0>"
-msgstr "To continue, you need to grant Aave smart contracts permission to move your funds from your wallet. Depending on the asset and wallet you use, it is done by signing the permission message (gas free), or by submitting an approval transaction (requires gas). <0>Learn more</0>"
+msgid "To continue, you need to grant Lendfinity smart contracts permission to move your funds from your wallet. Depending on the asset and wallet you use, it is done by signing the permission message (gas free), or by submitting an approval transaction (requires gas). <0>Learn more</0>"
+msgstr "To continue, you need to grant Lendfinity smart contracts permission to move your funds from your wallet. Depending on the asset and wallet you use, it is done by signing the permission message (gas free), or by submitting an approval transaction (requires gas). <0>Learn more</0>"
 
 #: src/components/transactions/Emode/EmodeModalContent.tsx
 msgid "To enable E-mode for the {0} category, all borrow positions outside of this category must be closed."

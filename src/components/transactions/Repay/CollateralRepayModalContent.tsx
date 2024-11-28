@@ -223,8 +223,8 @@ export function CollateralRepayModalContent({
         return (
           <Trans>
             Due to health factor impact, a flashloan is required to perform this transaction, but
-            Aave Governance has disabled flashloan availability for this asset. Try lowering the
-            amount or supplying additional collateral.
+            Lendfinity Governance has disabled flashloan availability for this asset. Try lowering
+            the amount or supplying additional collateral.
           </Trans>
         );
       default:
