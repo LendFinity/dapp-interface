@@ -1,12 +1,7 @@
-import {
-  BookOpenIcon,
-  CreditCardIcon,
-  // QuestionMarkCircleIcon
-} from '@heroicons/react/outline';
+import { BookOpenIcon, CreditCardIcon } from '@heroicons/react/outline';
 import { t } from '@lingui/macro';
 import { ReactNode } from 'react';
 import { ROUTES } from 'src/components/primitives/Link';
-import { ENABLE_TESTNET } from 'src/utils/marketsAndNetworksConfig';
 
 import { MarketDataType } from '../marketsConfig';
 
@@ -28,6 +23,14 @@ export const navigation: Navigation[] = [
     title: t`Markets`,
     dataCy: 'menuMarkets',
   },
+  {
+    link: ROUTES.bridge,
+    title: t`Bridge`,
+  },
+  {
+    link: ROUTES.faucet,
+    title: t`Faucet`,
+  },
   // {
   //   link: ROUTES.staking,
   //   title: t`Stake`,
@@ -46,15 +49,11 @@ export const navigation: Navigation[] = [
   //   //   process.env.NEXT_PUBLIC_ENV === 'prod' &&
   //   //   !ENABLE_TESTNET,
   // },
-  {
-    link: ROUTES.faucet,
-    title: t`Faucet`,
-    isVisible: () => process.env.NEXT_PUBLIC_ENV === 'staging' || ENABLE_TESTNET,
-  },
-  {
-    link: ROUTES.bridge,
-    title: t`Bridge`,
-  },
+  // {
+  //   link: ROUTES.faucet,
+  //   title: t`Faucet`,
+  //   isVisible: () => process.env.NEXT_PUBLIC_ENV === 'staging' || ENABLE_TESTNET,
+  // },
 ];
 
 interface MoreMenuItem extends Navigation {

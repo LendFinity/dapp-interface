@@ -117,7 +117,7 @@ export const ROUTES = {
   markets: '/markets',
   staking: '/staking',
   governance: '/governance',
-  faucet: 'https://bitfinity.network/faucet',
+  faucet: 'https://faucet.lendfinity.xyz/',
   bridge: 'https://bitfinity.omnity.network/icp',
   migrationTool: '/v3-migration',
   marketMigrationTool: (marketName: CustomMarket) => `/v3-migration/?market=${marketName}`,
