@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import AnalyticsConsent from 'src/components/Analytics/AnalyticsConsent';
 import { FeedbackModal } from 'src/layouts/FeedbackDialog';
 import { FORK_ENABLED } from 'src/utils/marketsAndNetworksConfig';
@@ -12,9 +12,9 @@ export function MainLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <TopBarNotify
-        notifyText="Follow LendFinity on X!"
-        learnMoreLink="https://x.com/lendfinity_xyz"
-        buttonText="Follow"
+        notifyText="Earn $LEND Tokens!"
+        learnMoreLink="https://airdrop.lendfinity.xyz/"
+        buttonText="Airdrop"
       />
       <AppHeader />
       <Box component="main" sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>

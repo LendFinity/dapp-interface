@@ -24,12 +24,16 @@ export const navigation: Navigation[] = [
     dataCy: 'menuMarkets',
   },
   {
+    link: ROUTES.faucet,
+    title: t`Faucet`,
+  },
+  {
     link: ROUTES.bridge,
     title: t`Bridge`,
   },
   {
-    link: ROUTES.faucet,
-    title: t`Faucet`,
+    link: ROUTES.airdrop,
+    title: t`Airdrop`,
   },
   // {
   //   link: ROUTES.staking,
