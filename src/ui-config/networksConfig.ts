@@ -60,7 +60,7 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
     baseAssetSymbol: 'BFT',
     wrappedBaseAssetSymbol: 'WBFT',
     baseAssetDecimals: 18,
-    explorerLink: 'https://explorer.mainnet.bitfinity.network/',
+    explorerLink: 'https://bs.mainnet.bitfinity.network/',
     networkLogoPath: '/icons/networks/bitfinity.svg',
   },
   355113: {
