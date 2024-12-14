@@ -16,7 +16,21 @@ export const usePoolsReservesHumanized = <T = ReservesDataHumanized>(
       (marketData) =>
         ({
           queryKey: queryKeysFactory.poolReservesDataHumanized(marketData),
-          queryFn: () => uiPoolService.getReservesHumanized(marketData),
+          queryFn: async () => {
+            const response = await uiPoolService.getReservesHumanized(marketData);
+            return {
+              ...response,
+              reservesData: response.reservesData.map((reserve) =>
+                reserve.symbol === 'WBFT'
+                  ? {
+                      ...reserve,
+                      symbol: 'WBTF',
+                      name: 'WBTF',
+                    }
+                  : reserve
+              ),
+            };
+          },
           refetchInterval: POLLING_INTERVAL,
           meta: {},
           ...opts,

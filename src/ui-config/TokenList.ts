@@ -87,22 +87,22 @@ const NETWORK_ASSETS: TokenInfo[] = [
   },
   {
     name: 'Bitfinity',
-    symbol: 'BFT',
+    symbol: 'BTF',
     decimals: 18,
     address: API_ETH_MOCK_ADDRESS,
     chainId: 355113,
-    logoURI: 'https://rsusi-aqaaa-aaaag-abhda-cai.ic0.app/images/coins/BFT.png',
+    logoURI: 'https://s2.coinmarketcap.com/static/img/coins/64x64/33779.png',
     extensions: {
       isNative: true,
     },
   },
   {
     name: 'Bitfinity',
-    symbol: 'BFT',
+    symbol: 'BTF',
     decimals: 18,
     address: API_ETH_MOCK_ADDRESS,
     chainId: 355110,
-    logoURI: 'https://rsusi-aqaaa-aaaag-abhda-cai.ic0.app/images/coins/BFT.png',
+    logoURI: 'https://s2.coinmarketcap.com/static/img/coins/64x64/33779.png',
     extensions: {
       isNative: true,
     },

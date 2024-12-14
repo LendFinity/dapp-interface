@@ -79,6 +79,7 @@ export const SYMBOL_NAME_MAP: { [key: string]: string } = {
   UNIWBTCUSDC: 'UNI WBTC/USDC',
   USDT: 'Tether',
   WAVAX: 'Wrapped Avalanche',
+  WBTF: 'Wrapped BTF',
   WBFT: 'Wrapped BFT',
   WBTC: 'Wrapped BTC',
   WETH: 'Wrapped ETH',
