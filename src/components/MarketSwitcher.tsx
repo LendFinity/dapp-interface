@@ -48,6 +48,7 @@ export const getMarketHelpData = (marketName: string) => {
     'Kovan',
     'Rinkeby',
     'Bitfinity Testnet',
+    'Taraxa Testnet',
   ];
   const arrayName = marketName.split(' ');
   const testChainName = arrayName.filter((el) => testChains.indexOf(el) > -1);
@@ -319,6 +320,7 @@ export const MarketSwitcher = () => {
         </Box>
       )}
       {availableMarkets.map((marketId: CustomMarket) => {
+        console.log('availableMarkets', availableMarkets);
         const { market, network } = getMarketInfoById(marketId);
         const marketNaming = getMarketHelpData(market.marketTitle);
         return (
