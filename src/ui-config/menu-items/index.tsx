@@ -31,10 +31,10 @@ export const navigation: Navigation[] = [
     link: ROUTES.bridge,
     title: t`Bridge`,
   },
-  {
-    link: ROUTES.airdrop,
-    title: t`Airdrop`,
-  },
+  // {
+  //   link: ROUTES.airdrop,
+  //   title: t`Airdrop`,
+  // },
   // {
   //   link: ROUTES.staking,
   //   title: t`Stake`,

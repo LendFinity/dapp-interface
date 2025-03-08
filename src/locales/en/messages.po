@@ -162,10 +162,6 @@ msgstr "Addresses"
 msgid "Addresses ({0})"
 msgstr "Addresses ({0})"
 
-#: src/ui-config/menu-items/index.tsx
-msgid "Airdrop"
-msgstr "Airdrop"
-
 #: src/components/transactions/Emode/EmodeModalContent.tsx
 #: src/components/transactions/Emode/EmodeModalContent.tsx
 msgid "All Assets"
