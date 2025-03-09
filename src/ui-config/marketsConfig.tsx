@@ -83,6 +83,7 @@ export type MarketDataType = {
 };
 export enum CustomMarket {
   // v3 test networks, all v3.0.1
+  proto_lukso_testnet_v3 = 'proto_lukso_testnet_v3',
   proto_bitfinity_testnet_v3 = 'proto_bitfinity_testnet_v3',
   proto_arbitrum_sepolia_v3 = 'proto_arbitrum_sepolia_v3',
   proto_fantom_testnet_v3 = 'proto_fantom_testnet_v3',
@@ -92,6 +93,7 @@ export enum CustomMarket {
   proto_sepolia_v3 = 'proto_sepolia_v3',
   proto_base_sepolia_v3 = 'proto_base_sepolia_v3',
   // v3 mainnets
+  proto_lukso_v3 = 'proto_lukso_v3',
   proto_bitfinity_v3 = 'proto_bitfinity_v3',
   proto_mainnet_v3 = 'proto_mainnet_v3',
   proto_optimism_v3 = 'proto_optimism_v3',
@@ -118,6 +120,32 @@ export enum CustomMarket {
 export const marketsData: {
   [key in keyof typeof CustomMarket]: MarketDataType;
 } = {
+  [CustomMarket.proto_lukso_v3]: {
+    marketTitle: 'LUKSO',
+    market: CustomMarket.proto_bitfinity_v3,
+    v3: true,
+    chainId: 42 as ChainId,
+    addresses: {
+      LENDING_POOL_ADDRESS_PROVIDER: '',
+      LENDING_POOL: '',
+      WETH_GATEWAY: '',
+      WALLET_BALANCE_PROVIDER: '',
+      UI_POOL_DATA_PROVIDER: '',
+    },
+  },
+  [CustomMarket.proto_lukso_testnet_v3]: {
+    marketTitle: 'LUKSO Testnet',
+    market: CustomMarket.proto_bitfinity_v3,
+    v3: true,
+    chainId: 4201 as ChainId,
+    addresses: {
+      LENDING_POOL_ADDRESS_PROVIDER: '',
+      LENDING_POOL: '',
+      WETH_GATEWAY: '',
+      WALLET_BALANCE_PROVIDER: '',
+      UI_POOL_DATA_PROVIDER: '',
+    },
+  },
   [CustomMarket.proto_bitfinity_v3]: {
     marketTitle: 'Bitfinity',
     market: CustomMarket.proto_bitfinity_v3,

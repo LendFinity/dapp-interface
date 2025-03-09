@@ -32,7 +32,7 @@ export function Meta({ title, description, imageUrl, timestamp }: MetaProps) {
       <meta
         name="keywords"
         key="keywords"
-        content="Decentralized Finance, DeFi, lending, borrowing, stablecoins, Ethereum, assets, erc-20, smart contracts, open finance, trustless, bitfinity, bitcoin"
+        content="Decentralized Finance, DeFi, lending, borrowing, stablecoins, Ethereum, assets, erc-20, smart contracts, open finance, trustless, bitfinity, lukso, bitcoin"
       />
       <link rel="apple-touch-icon" href="/lendfinity_icon180.png" />
       <meta name="apple-mobile-web-app-title" content={`Lendfinity`} />

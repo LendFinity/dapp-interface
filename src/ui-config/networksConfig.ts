@@ -54,6 +54,24 @@ export type BaseNetworkConfig = Omit<NetworkConfig, 'explorerLinkBuilder'>;
 const ratesHistoryApiUrl = `${process.env.NEXT_PUBLIC_API_BASEURL}/data/rates-history`;
 
 export const networkConfigs: Record<string, BaseNetworkConfig> = {
+  42: {
+    name: 'LUKSO',
+    publicJsonRPCUrl: ['https://rpc.mainnet.lukso.network'],
+    baseAssetSymbol: 'LYX',
+    wrappedBaseAssetSymbol: 'WLYX',
+    baseAssetDecimals: 18,
+    explorerLink: 'https://explorer.execution.mainnet.lukso.network/',
+    networkLogoPath: '/icons/networks/lukso.svg',
+  },
+  4201: {
+    name: 'LUKSO Testnet',
+    publicJsonRPCUrl: ['https://rpc.testnet.lukso.network'],
+    baseAssetSymbol: 'LYXt',
+    wrappedBaseAssetSymbol: 'WLYXt',
+    baseAssetDecimals: 18,
+    explorerLink: 'https://explorer.execution.testnet.lukso.network/',
+    networkLogoPath: '/icons/networks/lukso.svg',
+  },
   355110: {
     name: 'Bitfinity',
     publicJsonRPCUrl: ['https://mainnet.bitfinity.network'],

@@ -119,6 +119,7 @@ export const ROUTES = {
   governance: '/governance',
   faucet: 'https://faucet.lendfinity.xyz/',
   bridge: 'https://bitfinity.omnity.network/icp',
+  luksoBridge: '',
   airdrop: 'https://airdrop.lendfinity.xyz/',
   migrationTool: '/v3-migration',
   marketMigrationTool: (marketName: CustomMarket) => `/v3-migration/?market=${marketName}`,

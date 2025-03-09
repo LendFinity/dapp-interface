@@ -107,6 +107,28 @@ const NETWORK_ASSETS: TokenInfo[] = [
       isNative: true,
     },
   },
+  {
+    name: 'LUKSO',
+    symbol: 'LYX',
+    decimals: 18,
+    address: API_ETH_MOCK_ADDRESS,
+    chainId: 42,
+    logoURI: 'https://s2.coinmarketcap.com/static/img/coins/64x64/27622.png',
+    extensions: {
+      isNative: true,
+    },
+  },
+  {
+    name: 'LUKSO',
+    symbol: 'LYXt',
+    decimals: 18,
+    address: API_ETH_MOCK_ADDRESS,
+    chainId: 4201,
+    logoURI: 'https://s2.coinmarketcap.com/static/img/coins/64x64/27622.png',
+    extensions: {
+      isNative: true,
+    },
+  },
 
   // NOTE L2 ETH
   {

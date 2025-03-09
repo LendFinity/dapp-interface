@@ -2797,14 +2797,6 @@ msgstr "Variable interest rate will <0>fluctuate</0> based on the market conditi
 msgid "Variable rate"
 msgstr "Variable rate"
 
-#: src/components/MarketSwitcher.tsx
-msgid "Version 2"
-msgstr "Version 2"
-
-#: src/components/MarketSwitcher.tsx
-msgid "Version 3"
-msgstr "Version 3"
-
 #: src/modules/history/TransactionRowItem.tsx
 msgid "View"
 msgstr "View"

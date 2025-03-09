@@ -121,8 +121,8 @@ export function getSupportedChainIds(): number[] {
 // ) as CustomMarket[];
 
 export const availableMarkets: CustomMarket[] = ENABLE_TESTNET
-  ? [CustomMarket.proto_bitfinity_testnet_v3]
-  : [CustomMarket.proto_bitfinity_v3];
+  ? [CustomMarket.proto_lukso_testnet_v3, CustomMarket.proto_bitfinity_testnet_v3]
+  : [CustomMarket.proto_lukso_v3, CustomMarket.proto_bitfinity_v3];
 
 const linkBuilder =
   ({ baseUrl, addressPrefix = 'address', txPrefix = 'tx' }: ExplorerLinkBuilderConfig) =>
