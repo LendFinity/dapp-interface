@@ -34,6 +34,8 @@ const WalletRow = ({ walletName, walletType }: WalletRowProps) => {
             alt={`browser wallet icon`}
           />
         );
+      case WalletType.UNIVERSAL_PROFILE:
+        return '🆙';
       case WalletType.WALLET_CONNECT:
         return (
           <img
@@ -204,6 +206,11 @@ export const WalletSelector = () => {
     <Box sx={{ display: 'flex', flexDirection: 'column' }}>
       <TxModalTitle title="Connect a wallet" />
       {error && <Warning severity="error">{handleBlocking()}</Warning>}
+      <WalletRow
+        key="up_wallet"
+        walletName="Universal Profile"
+        walletType={WalletType.UNIVERSAL_PROFILE}
+      />
       <WalletRow
         key="browser_wallet"
         walletName="Metamask wallet"

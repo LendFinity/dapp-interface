@@ -9,11 +9,13 @@ import { ConnectorUpdate } from '@web3-react/types';
 import { WalletLinkConnector } from '@web3-react/walletlink-connector';
 import { getNetworkConfig } from 'src/utils/marketsAndNetworksConfig';
 
+import { UniversalProfileConnector } from './UniversalProfileConnector';
 // import { LedgerHQFrameConnector } from 'web3-ledgerhq-frame-connector';
 import { WalletConnectConnector } from './WalletConnectConnector';
 
 export enum WalletType {
   INJECTED = 'injected',
+  UNIVERSAL_PROFILE = 'universal_profile',
   WALLET_CONNECT = 'wallet_connect',
   WALLET_LINK = 'wallet_link',
   TORUS = 'torus',
@@ -116,6 +118,8 @@ export const getWallet = (
       }
       return new FrameConnector({ supportedChainIds: [1] });
     }
+    case WalletType.UNIVERSAL_PROFILE:
+      return new UniversalProfileConnector();
     default: {
       throw new Error(`unsupported wallet`);
     }
