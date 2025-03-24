@@ -2,11 +2,13 @@ import { CogIcon } from '@heroicons/react/solid';
 import { Trans } from '@lingui/macro';
 import { Button, Menu, MenuItem, SvgIcon, Typography } from '@mui/material';
 import React, { useState } from 'react';
+import { PROD_ENV } from 'src/utils/marketsAndNetworksConfig';
 
 // import { DEFAULT_LOCALE } from 'src/libs/LanguageProvider';
 // import { useRootStore } from 'src/store/root';
 // import { SETTINGS } from 'src/utils/mixPanelEvents';
 import { DarkModeSwitcher } from './components/DarkModeSwitcher';
+import { TestNetModeSwitcher } from './components/TestNetModeSwitcher';
 // import { LanguageListItem, LanguagesList } from './components/LanguageSwitcher';
 
 export const LANG_MAP = {
@@ -86,7 +88,7 @@ export function SettingsMenu() {
         </MenuItem>
 
         <DarkModeSwitcher component={MenuItem} />
-        {/* {PROD_ENV && <TestNetModeSwitcher />} */}
+        {!PROD_ENV && <TestNetModeSwitcher />}
         {/* <LanguageListItem onClick={handleLanguageClick} component={MenuItem} /> */}
       </Menu>
 
